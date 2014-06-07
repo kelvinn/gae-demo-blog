@@ -1,0 +1,60 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link href="http://www.kelvinism.com/stylesheets/reset-fonts-grids.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.kelvinism.com/stylesheets/default-190511.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    {% block to_head %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="verify-v1" content="vFzA9yhNvoZomc8I0DM3Ia9uqKiZ0p5ITe36aXFsWuU=" />
+    <meta name="msvalidate.01" content="1AEA532508B0ED2262916D7603C8634F" />
+    <meta name="Description" content="This is the personal blog of Kelvin Nicholson, a traveling I.T. professional, writing about Linux, Open Source and his plethora of adventures." />
+</head>
+<body>
+	<div id="redbar"></div>
+	<div id="greenbar"></div>
+	<div id="doc2" class="yui-t6">
+		<div id="hd">
+			<div id="menu">
+			    <a href="/"><span id="logo"></span></a>
+			    <ul>
+				<li><a href="http://blog.kelvinism.com">Blog</a></li>
+				<li><a href="/articles/">Articles</a></li>
+				<li><a href="/projects/">Projects</a></li>
+				<li><a href="/howtos/">Tutorials</a></li>
+				<li><a href="/about-me/">Who</a></li>
+			    </ul>
+			</div>
+		</div>
+		{% block content %}{% endblock %}
+	</div>
+	<div id="ft">
+		<div id="copyright">
+<!--Creative Commons License-->Copyleft with <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Some Rights Reserved</a>.<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<Work rdf:about="">
+<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc/2.5/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/></License></rdf:RDF> -->
+     		Opinions on this site do not represent my employeer</a>.
+		Made with <a href="http://www.djangoproject.com">Django</a>.<br />
+		</div>	
+	</div>
+
+{% block to_foot %}{% endblock %}
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-786228-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
+

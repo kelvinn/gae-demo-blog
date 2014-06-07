@@ -1,0 +1,3141 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Links */
+
+a {
+	text-decoration: none;
+}
+strong {
+	font-weight: bold;
+}
+img {
+	border: 0px;
+}
+
+/* CSS Document */
+
+#cprightcol a,
+#cpleftcol a	{
+	display: block;
+}
+#cprightcol h2,
+#cpleftcol h2 {
+	display: none;
+}
+a.subnav:link,
+a.subnav:visited {
+	font-size: 11px;
+	padding-left: 1em;
+}
+body {
+	margin: 0;
+} 
+body, p, td, li {
+	font: 12px/14px Arial, Helvetica, sans-serif;
+	color: #333;
+}
+h1, h2 {
+	font: 1.5em/1.2em ;
+	padding: 0;
+	margin: 0 0 .2em;
+}
+h3 {
+	font: bold 18px/1.2em Arial, Helvetica, sans-serif;
+	padding: 4px 0 0 0;
+	margin: 0 0 4px 0;
+}
+h4 {
+	font: 16px/1em ;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+h5 {
+	font: 13px/1em ;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+.smalltext {
+	font-size: 0.8em;
+}
+.nobottommargin {
+	margin-top: 1em;
+	margin-bottom: 0px;
+}
+.graybox {
+	border-top: 1px solid #AAA;
+	border-bottom: 1px solid #AAA;
+	background: #EEE;
+	padding: 8px;
+	margin: 0;
+}
+.note {
+	border: 1px dashed #AAA;
+	background: #FFF;
+	padding: 8px;
+	margin: 0;
+}
+.smallnote {
+	border: 1px dashed #AAA;
+	background: #FFF;
+	padding: 8px;
+	margin: 0;
+	font-size: 0.8em;
+}
+a.button:link,
+a.button:visited {
+	text-decoration: none;
+	display: inline;
+	border: 1px outset #EEE;
+	background: #EEE;
+	padding: 4px 8px 2px 8px;
+	margin: 0;
+	text-align: center;
+}
+a.button:hover {
+	background: #CCC;
+}
+a.button:active {
+	border: 1px inset #EEE;
+	background: #EEE;
+}
+input.liquid,
+textarea.liquid {
+	width: 95%;
+}
+form table.form_table td {
+	padding-bottom: 5px;
+}
+.form_error {
+	font-size: 15px;
+	color: black;
+	border: 1px dotted #cc0000;
+	padding: 5px;
+	margin: 5px 5px 15px;
+}
+.validation_error {
+	color: #cc0000;
+}
+.validation_note {
+	padding: 2px 4px;
+	background: #cc0000;
+	color: #FFF;
+	margin-bottom: 4px;
+}
+form {
+	margin-bottom: 0;
+}
+.top_bar {
+	background: #eeeeee;
+	border-bottom: 1px solid #999999;
+}
+.evenrow {
+	background: #edf3fe;
+	border-bottom: 1px solid #999999;
+	padding: 0 8px;	
+}
+tr.evenrow {
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+.oddrow {
+	background: #fff;
+	border-bottom: 1px solid #999999;
+	padding: 0 8px;
+}
+.forumname {
+	padding: 0;
+	color: blue;
+	margin: 0 0 10px 0;
+}
+.adminbutton {
+	width: 85px;
+	font-size: 12px;
+	font-family: arial, verdana, sans-serif;
+}
+#cp_pdf_results li {
+	font-size: 1.1em;
+	padding: 10px 10px 10px 30px;
+	margin: 0;
+	list-style: none inside;
+	border-bottom: 1px solid #666;
+
+}
+li.pdf_oddrow {
+	background: #f5f5f5 url(http://media.collegepublisher.com/media/assets/images/pdfimage.gif) no-repeat 5px 50%;
+}
+
+li.pdf_evenrow {
+	background: #edf3fe url(http://media.collegepublisher.com/media/assets/images/pdfimage.gif) no-repeat 5px 50%;
+}
+h4.cp_link_underline {
+	text-align: right;
+	color: #666;
+	font-size: 11px;
+}
+h4.cp_link_underline a {
+	text-decoration: underline;
+	color: #666;
+}
+/* Calendar Styling */
+
+#calendar_header {
+	padding: 10px;
+}
+.calendar_dark {
+	color: #c9c9c9;
+	background: #666666;
+}
+
+#calendar_border {
+	border-bottom: 1px solid #aaa;
+}
+
+/* Forum Styling */
+
+#forum .graybox {
+	padding: 8px 0;
+}
+#forum .originalmessage {
+	font: 15px/1em ;
+	text-decoration: none;
+	background: #eeeeee;
+	border-bottom: 1px solid #999999;
+	padding: 8px;
+	margin: 0;	
+}
+#forum .replymessage_even {
+	font: 12px/1em ;
+	text-decoration: none;
+	border-top: 1px solid black;
+	background: #EEE;
+	padding: 8px;
+	margin: 0;	
+}
+#forum .replymessage_odd {
+	font: 12px/1em ;
+	text-decoration: none;
+	border-top: 1px solid black;
+	background: #FFF;
+	padding: 8px;
+	margin: 0;	
+}
+.recordSetBrowser th {
+	background: #EEE;
+	text-align: left;
+}
+.hilite_table {
+	border: 1px solid #666;
+	background: #f3f3f3;
+}
+
+/* Search Results */
+
+#searchResults h1 {
+	font: bold 13px arial, verdana, sans-serif;
+	margin: 0px;
+	margin-bottom: 4px;
+	margin-top: -4px;
+}
+#searchResults h2 {
+	font: bold 11px arial, verdana, sans-serif;
+	margin: 0px;
+
+	margin-bottom: 4px;
+}
+#searchResults, #searchResults p, #searchResults td {
+	font: normal 11px arial, verdana, sans-serif;
+	margin: 0px;
+	margin-bottom: 6px;
+}
+#searchResults .oddrow {
+	background: #edf3fe;
+}
+#searchResults .evenrow {
+	background: #eee;
+}
+#searchResults td {
+	padding: 8px;
+}
+#searchResults th {
+	font: bold 11px arial, verdana, sans-serif;
+	text-align: left;
+	color: #4B4B4B;
+	background: url(http://media.collegepublisher.com/media/images/search_header.gif) repeat-x bottom;
+	height: 18px;
+	padding-left: 7px;
+}
+#searchResults .scorebar {
+	border: 1px solid #999; 
+	background: #FFF;
+	width: 50px;
+}
+#post_form {
+	padding: 5px;
+}
+#post_form td {
+	padding: 5px;
+}
+#post_form_inner {
+	border: 1px solid #aaa;
+}
+dl#post_form_inner {
+	margin: 0 5px 5px;
+}
+#post_form_inner dd, #post_form_inner dt {
+	padding: 5px;
+}
+.graybox dl, .graybox dt, .graybox dd {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+#search_directions_body {
+		display: none;
+}
+
+/* Slideshow */
+
+.middletd {
+	padding: 10px;
+}
+.texttd {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #58595B;
+	padding: 4px;
+	border-top: 1px solid #fff;
+}
+
+.toptd {
+	border: 1px solid #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font size:11px
+}
+.buttons {
+	padding-bottom: 3px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+/* Commented */
+ul#address {
+	margin: 15px 0;
+}
+ul#address, #address li { 
+	padding: 0;
+	list-style-type: none;
+}
+
+/* Login */
+
+#login fieldset {
+	background: #ccc;
+	border: 1px solid #666;
+	padding: 10px;
+}
+#login dl, #login dt, #login dd, .graybox dl {
+	margin: 0;
+	padding: 0;
+}
+
+/* Calendar */
+
+.niceFont {
+	font-family : arial, helvetica, sans-serif; 
+	font-size : 10px;
+}
+#fullcalendar {
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	background: #eee;
+}
+#fullcalendar td {
+	border: 1px solid #aaa;
+	border-bottom: none;
+	border-right: none;
+	font-family : arial, helvetica, sans-serif; 
+	font-size : 10px;
+}
+#fullcalendar td td {
+	border: none;
+}
+#cal_header, .dark_head {
+	background: #666;
+	padding: 3px;
+	color: #ccc;
+}
+#cal_header strong {
+	color: #ccc;
+}	
+#cal_header a {
+	color: #fff;
+}
+
+#loggedin_bar {
+	border: 1px outset #EEE;
+	background: #EEE;
+}
+#loggedin_bar img {
+	padding: 0 4px 0 0;
+}
+#loggedin_bar td {
+	font: 12px/1em ;
+	padding: 2px 6px;
+}
+
+/* NC Bar */
+
+#ncbar {
+	border-bottom: 2px ridge #fff;
+	padding:0;
+	margin:0;
+}
+#agent99 {
+	line-height:1.4em;
+	padding: 10px 10px 0px 14px;
+	z-index:99;
+	position:absolute; 
+	top:31px; 
+	left:158px; 
+	right:444px; 
+	width:291px; 
+	visibility:hidden; 
+	border:1px solid #6a6a6a; 
+	border-top: none; 
+	background-color: #F0F0F0; 
+}
+#agent99 table {
+	font: 12px/14px Arial, Helvetica, sans-serif;
+}
+#agent99 a:link, #agent99 a:hover, #agent99 a:active, #agent99 a:visited {
+	border:0;
+}
+#formtext {
+	width:202px;
+}
+#search {
+	width:54px;
+}
+#cp_extras {
+	font: normal 11px Arial, Arial, Helvetica, sans-serif;
+	padding: 6px;
+}
+#cp_extras a:link,
+#cp_extras a:visited,
+#cp_extras a:active {
+	font-weight: bold;
+	color:#000;
+}
+#cp_extras a:hover {
+	font-weight: bold;
+	color:#900;
+}
+
+
+/* Staff Login styles */
+
+a#stafflogin {
+	display: block;
+	padding: 5px;
+	border: 1px solid #BBDFF9;
+	background: #fff url(http://media.collegepublisher.com/media/assets/images/over.jpg) bottom left repeat-x;
+	text-decoration: none;
+	color: #1A3787;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+a:hover#stafflogin {
+	border: 1px solid #aaa;
+	background: #fff url(http://media.collegepublisher.com/media/assets/images/click.jpg) bottom left repeat-x;
+	color: #666;
+}
+#log_left {
+	float: left;
+	width: 230px;
+}
+#log_right {
+	float: left;
+	width: 230px;
+	margin: 0 0 0 10px;
+}
+#log_both {
+	float: left;
+	margin: 0 0 25px 0;
+}
+form#login {
+	margin: 0;
+}
+
+/* Other Styles */
+
+a.faux_button {
+	padding: 5px 4px;
+	border: 1px solid #ccc;
+	background: #fff url(http://media.collegepublisher.com/media/assets/images/vote.gif) bottom left repeat-x;
+	text-decoration: none;
+	color: #666;
+	font: 12px/12px arial,sans-serif;
+	text-align: center;
+	width: 75px;
+}
+a:hover.faux_button {
+	border: 1px solid #aaa;
+	background: #fff url(http://media.collegepublisher.com/media/assets/images/click.jpg) bottom left repeat-x;
+	color: #666;
+}
+#poll a {
+	margin: 5px 5px 0;
+}
+.hidden {
+	display: none;
+}
+
+/* Front Page Templating */
+
+#fplead {
+	border-bottom: 1px dashed gray;
+	margin: 0 0 8px;
+	padding: 0 0 8px;
+}
+td.fparticle {
+	vertical-align: top;
+	text-align: left;
+}
+.lead_right .fparticle {
+	padding: 0 8px 0 0;
+}
+.lead_center .fparticle {
+	padding: 8px 0 0 0;
+}
+.fpimage p {
+	font: normal 10px/1.1em Arial, Helvetica, sans-serif;
+	padding: 4px;
+	margin: 0;
+}
+.fpimage img {
+	display: block;
+}
+#cpcentercol {
+	padding: 10px 0 0;
+}
+#fpaio_3 #sidebar img {
+	border: 1px solid #aaa;
+}
+
+
+/* Front Page Lead 1 */
+#fp_feat_1 .fp_feat {
+	clear: left;
+	margin: 0 0 15px;
+	float: left;
+}
+#fp_feat_1 dl, #fp_feat_1 dd, #fp_feat_1 dt {
+	float: left;
+	background: #ddd;
+	margin: 0 8px 0 0;
+}
+#fp_feat_1 dd, #fp_feat_1 dt {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Front Page Lead 2 */
+
+#fptemplate2 #fplead,
+#fptemplate2 #fpfeatured {
+	padding: 0 8px 0 0;
+	vertical-align: top;
+	text-align: left;
+	border: 0;
+}
+#fptemplate2 #fpfeatured {
+	padding: 0 0 0 8px;
+}
+#fptemplate2 #fpfeatured h3 {
+	font: bold 16px/1.1em Arial, Helvetica, sans-serif;
+	padding: 4px 0 0 0;
+	margin: 0 0 4px 0;
+	border-bottom: 1px solid black;
+}
+#fptemplate2 h4 {
+	font: bold 14px/1.1em Arial, Helvetica, sans-serif;
+	padding: 2px 0 2px 20px;
+	margin: 0;
+	background: url("images/digiarrow.gif") no-repeat 0px 5px;
+}
+
+
+/* Front Page Lead 3 */
+
+#fptemplate3 #fplead,
+#fptemplate3 #fpfeatured {
+	padding: 0 8px 0 0;
+	vertical-align: top;
+	text-align: left;
+	border: 0;
+}
+#fptemplate3 #fpfeatured {
+	padding: 0 0 0 8px;
+}
+#fptemplate3 #fpfeatured h3 {
+	font: bold 16px/1.1em Arial, Helvetica, sans-serif;
+	padding: 4px 0 0 0;
+	margin: 0 0 4px 0;
+	border-bottom: 1px solid black;
+}
+#fptemplate3 h4 {
+	font: bold 14px/1.1em Arial, Helvetica, sans-serif;
+	padding: 2px 0 2px 20px;
+	margin: 0;
+	background: url("images/digiarrow.gif") no-repeat 0px 5px;
+}
+
+#fplead h2 {
+	font: bold 18px/1.1em Arial, Helvetica, sans-serif;
+	padding: 0 0 4px 0;
+	margin: 0;
+}
+#fplead p {
+	font: normal 11px/1.1em Arial, Helvetica, sans-serif;
+	padding: 0 0 0.5em 0;
+	margin: 0;
+}
+#fpfeatured h3 {
+	font: bold 16px/1.1em Arial, Helvetica, sans-serif;
+	padding: 0 0 4px 0;
+	margin: 0;
+}
+#fpfeatured p {
+	font: normal 11px/1.1em Arial, Helvetica, sans-serif;
+	padding: 0 0 0.5em 0;
+	margin: 0;
+}
+.article_byline,
+.article_byline a
+.image_byline,
+.image_byline a {
+	font: normal 9px/1.1em Arial, Helvetica, sans-serif !important; 
+	color: #666;
+}
+#profile_button {
+	font: 12px/1em ;
+	color: white;
+	background: url("/media/assets/images/profile.gif") repeat-x;
+	padding: 3px;
+	
+}
+
+/* Front Page Styles */
+
+#fplead td {
+	padding-bottom: 25px;
+}
+.lead_left, .lead_right, .lead_center {
+	margin: 0 0 15px;
+	text-align: left;
+}
+
+/* Lead left */
+
+.lead_left td+td {
+	padding: 0 0 0 8px;
+	width: 100%;
+}
+
+/* Lead Right */
+
+.lead_right td {
+	padding: 0 8px 0 0;
+	width: 100%;
+}
+
+/* Lead Center */
+
+.lead_center .summary {
+	margin: 0 0 25px;
+}
+.lead_center .fpimage {
+	margin: 0 0 8px;
+}
+
+/* Featured Styles */
+
+#fp_feat h4 {
+	margin: 0 0 7px;
+}	
+#fp_feat h5 {
+	margin: 0 0 7px;
+}
+#fp_feat .article_byline {
+	margin: 0 0 7px;
+}
+
+/* Featured 1 */
+
+.article {
+	float: left;
+	clear: left;
+	width: 100%;
+	margin: 0 0 25px;
+}
+#fp_feat_1 .summary {
+	margin: 0 0 0 83px;
+}
+.float_thumbnail {
+	float:left;
+	width: 75px;
+	margin: 0 8px 0 0;
+}
+
+/* Featured 2 */
+
+#fp_feat_2 td {
+	width: 50%;
+	padding-bottom: 25px;
+}
+#fp_feat_2 td+td {
+	padding: 0 0 0 15px;
+}
+
+/* Featured 3 */
+
+#fp_feat_3 td {
+	width: 33%;
+	padding-bottom: 25px;
+}
+#fp_feat_3 td+td {
+	padding: 0 0 0 15px;
+}
+
+/* FPAIO = Front page all in one */
+
+/* FPAIO Styles */
+#sidebar p, #sidebar h4, #sidebar h5 {
+	margin: 0;
+	padding: 0;
+}
+#sidebar h4, #sidebar p, #sidebar h5 {
+	margin: 0 0 5px;
+}
+
+/* FPAIO 3 */
+
+#fpaio_3 td {
+	vertical-align: top;
+}	
+#fpaio_3 td + td {
+	padding: 0 0 0 15px;
+}	
+#fpaio_3 .fpimage {
+	margin: 0 0 15px;
+}
+#fpaio_3 #sidebar ul {
+	list-style: none;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+#fpaio_3 #sidebar li {
+	list-style: none;
+	padding: 0 0 0 17px;
+	background: url(http://media.collegepublisher.com/media/images/digiarrow.gif) no-repeat left 3px;
+}
+#fpaio_3 .featured {
+	margin: 0 0 15px;
+}
+
+/* FPAIO 2 */
+
+#fpaio_2 td {
+	vertical-align: top;
+}	
+#fpaio_2 td + td {
+	padding: 0 0 0 15px;
+}	
+#fpaio_2 .fpimage {
+	margin: 0 0 15px;
+}
+#fpaio_2 h4 {
+	padding: 0 0 4px;
+	border-bottom: 1px solid #aaa;
+}
+#fpaio_2 #sidebar ul {
+	list-style: none;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+#fpaio_2 #sidebar li {
+	list-style: none;
+	padding: 0 0 0 17px;
+	line-height: 1.5em;
+	background: url(http://media.collegepublisher.com/media/images/digiarrow.gif) no-repeat left 3px;
+}
+#fpaio_2 .featured {
+	margin: 0 0 15px;
+}
+
+/* FPAIO 1 */
+
+#fpaio_1 td {
+	vertical-align: top;
+}	
+#fpaio_1 td + td {
+	padding: 0 0 0 15px;
+}	
+#fpaio_1 .fpimage {
+	margin: 0 0 15px;
+}
+#fpaio_1 .featured {
+	margin: 0 0 15px;
+}
+
+/* Article Display Styles */
+
+#article h2, #article h4, #meta {
+	margin: 0 0 7px;
+}
+#article h3 {
+	color: #666;
+	margin: 0 0 7px;
+}
+
+/* slideshow */
+
+td.toptd {
+	border: 0;
+}
+.toptd a {
+	color: #666;
+	font: Arial, Helvetica, sans-serif;
+}
+
+/* Poll */
+
+#poll {
+	background: #eee; 
+	border: 1px solid #ccc; 
+	padding: 5px; 
+	margin: 15px 5px 0; 
+	text-align: left;
+}
+p#view_results {
+	margin: 5px 0 0;
+}
+
+
+#cp_poll_legend {
+	padding: 4px 0;
+}
+#cp_poll_legend td {
+	background: white;
+	vertical-align: top;
+	text-align: left;
+	padding: 4px;
+}
+.cp_poll_color div {
+	width: 1em;
+	height: 1em;
+	border: 1px solid #666;
+}
+#cp_poll_color_1 {
+	background: #bc0303;
+}
+#cp_poll_color_2 {
+	background: #0064d1;
+}
+#cp_poll_color_3 {
+	background: #ff9800;
+}
+#cp_poll_color_4 {
+	background: #108b00;
+}
+#cp_poll_color_5 {
+	background: #6435b1;
+}
+#cp_poll_color_6 {
+	background: #0614ca;
+}
+#cp_poll_color_7 {
+	background: #36c947;
+}
+#cp_poll_color_8 {
+	background: #b23da8;
+}
+#cp_poll_color_9 {
+	background: #746137;
+}
+#cp_poll_color_10 {
+	background: #ec008c;
+}
+
+
+/* Ad Objects */
+
+#object9975, #object9974, #object9973, #banner_client_1,#banner_network_6 {
+	text-align: center;
+}
+
+/* Weather */
+
+#weather {
+	border: 1px solid #666;
+	padding: 1px;
+	background: #fff;
+	width: 120px;
+	margin: 0 auto;
+}
+#weatherblock {
+	margin: 1px 0 0 0;
+	padding: 3px;
+	border-top: 1px solid #ccc;
+}
+.art {
+	margin: 0 0 15px 0;
+}
+
+/* Breadcrumb */
+
+#breadcrumb, #breadcrumb a {
+	font-size: 10px;
+	margin: 0 0 7px;
+}
+
+#banner_network_1, #loggedin_controlbar {padding: 0 0 10px;}
+
+/* Everything Centered Fix */
+
+/*#maincontent, #flan_body, #cp_body, #flan_content, #cp_content {
+	text-align: left;
+	overflow: hidden;
+}*/
+#article {
+	text-align: left;
+}
+#article h2 {
+	line-height: 1.2em;
+}
+
+/* User List Styles */
+
+ul#user_art_list_but {
+	margin: 0 0 15px;
+	padding: 0;
+	list-style: none;
+}
+.user_art_list ul {
+	border: 1px solid #ccc;
+	margin: 0 0 15px;
+	padding: 0px;
+}
+.user_art_list strong {
+	margin: 0 0 5px;  
+}
+.user_art_list li {
+	list-style: none;
+	padding: 3px 5px;
+}
+.user_art_list li.even {
+	background: #f5f5f5;
+}
+
+/* Archives */
+
+.arch_group a {
+	color: #333;
+}
+.arch_group {
+	border-top: 1px solid #AAA;
+	border-bottom: 1px solid #AAA;
+	text-align: left;
+}
+.arch_group strong {
+	display: block;
+}
+.arch_group .evenrow, .arch_group .oddrow {
+	padding: 0 3px;
+	clear: left;
+}
+h2, h3 {
+	text-align: left;
+	line-height: 1.2em;
+}
+
+/*    Y2M Text Ads */
+
+#banner_loc_3 {
+    padding: 0 0 0 15px;
+}
+.textad-container .textad {
+    background: #EEE;
+    padding: 4px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.textad-container .textad h1,
+.textad-container .textad h1 a {
+    font: normal 12px/1.1em Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #00F;
+    text-decoration: underline;
+}
+.textad-container .textad p,
+.textad-container .textad p a {
+    font: normal 12px/1.1em Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #000;
+    text-decoration: none;
+}
+.textad-container .textad p.url,
+.textad-container .textad p.url a {
+    color: #3F9F3F;
+    text-decoration: none;
+}
+.textad-container .caption a {
+    font: normal 10px/1.1em Arial, Helvetica, sans-serif;
+    color: #999;
+}
+
+
+#flan_article_top {
+       padding: 10px 0 0 0 !important;
+       border-bottom: 1px solid #ccc;
+       margin: 0 0 15px 0;
+}
+#flan_article_top ul, #flan_article_tools ul, #flan_article_bottom ul {
+       margin: 0;
+       padding: 0;
+}
+#flan_article_bottom {
+       margin: 15px 0;
+}
+#flan_article_top ul {
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#flan_article_top li, #flan_article_bottom li, #flan_story_bot_nav {
+       list-style: none;
+       font-size: 11px;
+       line-height: 17px;
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#flan_article_top li a, #flan_article_bottom li a, #flan_story_bot_nav a {
+       color: #333333 !important;
+}
+#flan_article_top li a:hover, #flan_article_bottom a:hover {
+       color: #000000 !important;
+}
+#flan_article_top_left {
+       float: left;
+       width: 230px;
+}
+#flan_article_top_left li {
+       display: inline;
+       margin: 0 5px 0 0 !important;
+}
+#flan_article_top_right, #flan_article_bottom_right {
+       float: right;
+       width: 190px;
+       text-align: right;
+}
+li#flan_article_discuss a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/discuss.gif) no-repeat left -1px;
+       padding: 0 0 0 17px;
+}
+li#flan_article_print a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/print.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#flan_article_email a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/email.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#flan_article_more a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/down.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#flan_article_blog a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/blogger.gif) no-repeat left 50%;
+}
+li#flan_article_live a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/livejournal.gif) no-repeat left 50%;
+}
+li#flan_article_digg a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/digg.gif) no-repeat left 50%;
+}
+li#flan_article_news a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/newsvine.gif) no-repeat left 50%;
+}
+li#flan_article_deli a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/delicious.gif) no-repeat left 50%;
+}
+li#flan_article_yaho a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/yahoo.gif) no-repeat left 50%;
+}
+li#flan_article_goog a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/google.gif) no-repeat left 0;
+}
+li.flan_article_page div {
+       /* Hides from IE-mac \*/
+       background: url(http://media.collegepublisher.com/media/assets/icons/page.gif) no-repeat left center;
+       padding: 0 0 0 17px;
+       float: right;
+       /* End hide from IE-mac */
+}
+#flan_story_text {
+       margin: 0 0 15px 0;
+}
+#flan_article_tools {
+       margin: 0 0 25px !important;
+       border-top: 1px solid #ccc !important;
+	   background: #f5f5f5 !important;
+}
+p.flan_article_more_tools {
+       font-weight: bold !important;
+       margin: 0 !important;
+       padding: 0 !important;
+       font-size: 12px !important;
+}
+p.flan_article_tools_header {
+       font-weight: bold !important;
+       margin: 0 0 8px !important;
+       padding: 0 !important;
+       font-size: 11px;
+}
+#flan_article_tools .flan_article_gutter {
+       padding: 5px !important;
+}
+#flan_article_tools ul {
+       display: inline !important;
+       list-style: none !important;
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#flan_article_tools li {
+       display: inline !important;
+       list-style: none !important;
+	   margin: 0 !important;
+	   padding: 0 !important;
+}
+#flan_article_tools li a {
+       display: inline !important;
+       font-size: 10px !important;
+       margin: 0 3px 0 0 !important;
+       padding: 3px 0 3px 17px !important;
+}
+#flan_article_tools li a {
+       display: inline !important;
+       font-size: 10px !important;
+}
+#flan_article_tools_book {
+       margin: 0 0 0 85px !important;
+       border-left: 1px solid #fff !important;
+}
+#flan_article_tools_blog {
+       float: left !important;
+       width: 85px !important;
+}
+#flan_article_tools_rss {
+       float: right !important;
+       width: 150px !important;
+       border-left: 1px solid #fff !important;
+}
+#flan_story_bot_nav {
+       margin: 0 0 15px !important;
+       text-align: right;
+}
+#flan_continued {
+	   font-size: 11px;
+	   line-height: 17px;
+       margin: 0 0 15px !important;
+}
+
+*html #flan_article_tools {
+       height: 47px;
+}
+
+
+
+
+/** Article Tools
+|_________________________________________________________ */
+
+/* Top Tools */ 
+#cp_article_top {
+       padding: 10px 0 0 0 !important;
+       border-bottom: 1px solid #ccc;
+       margin: 0 0 15px 0;
+}
+#cp_article_top ul, #cp_article_tools ul, #cp_article_bottom ul {
+       margin: 0;
+       padding: 0;
+}
+#cp_article_bottom {
+       margin: 15px 0;
+}
+#cp_article_top ul {
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#cp_article_top li, #cp_article_bottom li, #cp_story_bot_nav {
+       list-style: none;
+       font-size: 11px;
+       line-height: 17px;
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#cp_article_top li a, #cp_article_bottom li a, #cp_story_bot_nav a {
+       color: #333333 !important;
+}
+#cp_article_top li a:hover, #cp_article_bottom a:hover {
+       color: #000000 !important;
+}
+#cp_article_top_left {
+       float: left;
+       width: 60%;
+}
+#cp_article_top_left li {
+       display: inline;
+       margin: 0 5px 0 0 !important;
+}
+#cp_article_top_right, #cp_article_bottom_right {
+       float: right;
+       width: 190px;
+       text-align: right;
+}
+li#cp_article_discuss a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/discuss.gif) no-repeat left -1px;
+       padding: 0 0 0 17px;
+}
+li#cp_article_print a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/print.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#cp_article_email a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/email.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#cp_article_more a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/down.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+
+
+/* Bottom Tools */
+#cp_article_tools {
+	margin: 1em 0 25px;
+}
+#cp_article_tools h4 {
+	margin: 0px;
+}
+#cp_article_tools h5 {
+	margin: 0px;
+	font-size: 11px;
+}
+#cp_at_content {
+	padding: 5px 0 7px;
+	border-top: 1px solid #ccc !important;
+	background: #f5f5f5 url(http://media.collegepublisher.com/media/assets/images/article_bkg.gif) repeat-x bottom right;
+}
+#cp_at_share {
+	float: left;
+	width: 70%;
+	padding: 0 0 0 5px;
+}
+#cp_at_rss {
+	padding: 0 0 0 5px;
+	/* i'd love for this to work right*/
+	/* border-left: 1px solid #ccc; */
+}
+#cp_article_tools #cp_at_content ul {
+	margin: 0px;
+	padding: 0px;
+}
+#cp_at_content li {
+	list-style: none;
+	display: inline;
+	margin: 0 8px 0 0;
+}
+#cp_at_content li a {
+	font-size: 10px;
+	padding: 3px 0 3px 17px
+}
+li#cp_at_blog a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/blogger.gif) no-repeat left 50%;
+}
+li#cp_at_facebook a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/facebook.gif) no-repeat left 50%;
+}
+li#cp_at_live a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/livejournal.gif) no-repeat left 50%;
+}
+li#cp_at_digg a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/digg.gif) no-repeat left 50%;
+}
+li#cp_at_news a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/newsvine.gif) no-repeat left 50%;
+}
+li#cp_at_deli a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/delicious.gif) no-repeat left 50%;
+}
+li#cp_at_yaho a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/yahoo.gif) no-repeat left 50%;
+}
+li#cp_at_goog a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/google.gif) no-repeat left 0;
+}
+/* ______________________________________________________ **/
+
+
+
+
+
+/* Network Channel Bar */
+
+#net_bar * {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+#net_bar a {
+	outline: none;
+}
+#net_bar a:active {
+	outline: none;
+}
+:focus {
+	-moz-outline-style: none;
+}
+#net_bar ul, #net_bar li {
+	list-style: none;
+}
+#net_bar fieldset {
+	border: none;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+#net_bar {
+	background: #e0e0e0;
+	border-bottom: 1px solid #7d87a2;
+	height: 33px;
+	font: 12px/1em Trebuchet MS, arial, verdana, sans-serif;
+}
+
+/* The College Publisher Logo Bit */
+
+#net_cp_a {
+	width: 165px;
+	height/**/: 26px;
+	line-height: 26px; /* for IE5/win */
+	text-indent: -1000px; 
+	position: absolute;
+	left: 5px;
+	top: 4px;
+	z-index: 2;
+}
+#net_cp_a a {
+	display: block;
+	width/**/: 165px; /* empty comments for IE5/win */
+	height/**/: 26px;
+	line-height: 26px; /* for IE5/win */
+	text-indent: -1000px; 
+	background: url(http://media.collegepublisher.com/media/images/net_cp2.gif) top left no-repeat;
+}
+#net_cp_a a:hover, #net_cp_a.unselected a:hover {
+	background-position: 0 -26px;
+}
+#net_cp_a.selected a, #net_cp_a.selected a:hover, #net_cp_a a:active {
+	background-position: 0 -52px;
+}
+#net_cp_a.unselected a {
+	background-position: 0 0;
+}
+#net_cp_nav_list {			
+	position: absolute;
+	left: 5px; 
+	top: 28px;
+	z-index: 1;
+}			
+ul#net_cp_nav_list {
+	list-style: none;
+	border: 1px solid #7d87a2;
+	background: #fff;
+	width: 225px;
+	padding: 5px 5px 3px;
+}
+ul#net_cp_nav_list li a {
+	display: block;
+	font: 12px/1em Trebuchet MS, arial, verdana, sans-serif;
+	border: 1px solid #ccc;
+	margin: 0 0 5px;
+	padding: 5px;
+	background: #f5f5f5;
+	text-decoration: none;
+	color: #666;
+}
+ul#net_cp_nav_list li a:hover {
+	background: #fff;
+	color: #303030;
+}
+
+#net_search {
+	visibility: visible;
+}
+
+/* Text Box */
+
+#net_search_input {
+	position: absolute;
+	top: 7px;
+	left: 180px;
+	font-size: 12px;
+	width: 125px;
+}
+
+/* The Search Select Bit */
+
+#net_search_choose_link {
+	width: 16px;
+	height/**/: 23px;
+	line-height: 22px; /* for IE5/win */
+	text-indent: -1000px; 
+	position: absolute;
+	left: 313px;
+	top: 6px;
+	z-index: 2;
+}
+#net_search_choose_link a {
+	display: block;
+	width/**/: 16px; /* empty comments for IE5/win */
+	height/**/: 22px;
+	line-height: 22px; /* for IE5/win */
+	text-indent: -1000px; 
+	background: url(http://media.collegepublisher.com/media/images/dropdown.png) top left no-repeat;
+}
+#net_search_choose_link a:hover, #net_bar #net_search_choose_link.unselected a:hover {
+	background-position: 0 -22px;
+}
+#net_bar #net_search_choose_link.selected a, #net_bar #net_search_choose_link.selected a:hover, #net_bar #net_search_choose_link a:active {
+	background-position: 0 -44px;
+}
+#net_bar #net_search_choose_link.unselected a {
+	background-position: 0 0;
+}
+#net_search_choose_options {			
+	position: absolute;
+	left: 313px; 
+	top: 25px;
+	z-index: 1;
+}			
+ul#net_search_choose_options {
+	list-style: none;
+	border: 1px solid #7d87a2;
+	background: #fff;
+	width: 175px;
+	padding: 5px 5px 0;
+	background: #fff;
+}
+ul#net_search_choose_options li {
+	margin: 0 0 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	font: 12px/1em Trebuchet MS, arial, verdana, sans-serif;
+}
+
+/* The Submit Button */
+
+#net_search_choose_submit {
+	position: absolute;
+	left: 329px;
+	top: 6px;
+	z-index: 2;
+	background: url(http://media.collegepublisher.com/media/images/button_bg.png) top right no-repeat;
+	overflow: hidden;
+}
+#net_search_choose_submit a {
+	font: 11px/21px Trebuchet MS, arial, verdana, sans-serif;
+	margin: 0 6px 0 4px;
+	text-decoration: none;
+	color: #333;
+}
+
+/* Navigation Bar */
+
+#net_channels {
+	position: absolute;
+	top: 12px;
+	right: 200px;
+	width: 375px;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#net_channels {
+	width: auto;
+}
+/* End IE5-Mac hack */
+#net_channels ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#net_channels li {
+	float:left;
+	margin:0;
+	padding:0;
+	background:url(http://media.collegepublisher.com/media/images/nav_right_1.png) no-repeat right top;
+	margin: 0 0 0 2px;
+}
+#net_channels a {
+	float: left;
+	display:block;
+	font: 11px/1em Trebuchet MS, arial, verdana, sans-serif;
+	padding: 4px;
+	background:url(http://media.collegepublisher.com/media/images/nav_left_1.png) no-repeat left top;
+	text-decoration: none;
+	color: #303030;
+}			
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#net_channels a {
+	float:none;
+}
+/* End IE5-Mac hack */
+
+
+/* IE Hacks */
+
+ul#net_cp_nav_list li {
+	/* Commented Backslash Hack hides rule from IE5-Mac \*/
+	height: 1%;
+	margin: 0 0 -3px;
+	/* End IE5-Mac hack */
+}
+
+/* Net Weather */
+
+#net_weather {
+	position: absolute;
+	right: 0;	
+	top: 1px;
+}
+
+
+
+/* 
+|	Podcasts
+|________________________________________________________ */
+#flan_pods h2 {
+	margin: 0 0 1em;
+}
+#flan_pods .flan_pods_channels {
+	margin: 0 0 1em;
+}
+#flan_pods .flan_pods_gutter {
+	padding: 10px;
+	background: #f5f5f5;
+}
+#flan_pods ul {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#flan_pods ul li {
+	list-style: none outside;
+}
+/* ____________________________ Headers & Description */
+#flan_pods h3 {
+	margin: 0 0 .5em;
+}
+#flan_pods h5 {
+	border-bottom: 1px solid #999;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #999;
+	margin: 0 0 3px;
+}
+#flan_pods img {
+	margin: 0 0em 1em 1em;
+	border: 1px solid #d8d8d8;
+	float: right;
+}
+/* ____________________________ Tracklist */
+.flan_pods_info {
+	margin: 0 0 1em;
+	clear: both;
+}
+.flan_pods_tracklist {
+	margin: 0px;
+	padding: 0px;
+}
+.flan_pods_list_even {
+	background: #edf3fe;
+}
+.flan_pods_list_odd {
+	background: #fff;
+}
+.flan_pods_list_odd:hover, .flan_pods_list_even:hover {
+	background: #ffc;
+}
+.flan_pods_tracklist li {
+	display: block;
+	padding: 10px 10px 8px;
+}
+.flan_pods_tracklist li p.flan_pods_title {
+	line-height:17px;
+	display: inline;
+	float: left;
+	margin: 0px !important;
+}
+.flan_pods_tracklist li p.flan_pods_description {
+	margin: .5em 0 0 !important;
+	font-size: .9em;
+}
+
+a.flan_pods_listen  {
+	display:block;
+	margin: 0px !important;
+	width/**/:37px; /* empty comments for IE5/win */
+	height/**/:17px;
+	text-indent:-1000em;
+	float: right;
+	background: url(http://media.collegepublisher.com/media/assets/images/podcast.gif) left top no-repeat;
+}
+a:hover.flan_pods_listen  {
+	background-position: left bottom;
+}
+/* ____________________________ "View All Tracks" */
+.flan_pods_channels .more {
+	font-size: 1.2em;
+	text-align: right;
+	margin: .5em 0 0 !important;
+}
+.flan_pods_channels .more a {
+	line-height: 1.2em;
+	padding: 5px;
+}
+/* ____________________________ Subscription Links List */
+.flan_pods_subscription_links {
+	text-align: right;
+}
+.flan_pods_subscription_links li {
+	display: inline;
+	margin: 0 10px 0 0;
+}
+.flan_pods_subscription_links li a {
+	padding: 0 0 0 17px;
+}
+.flan_pods_rss a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/rss11.gif) no-repeat left center;
+}
+.flan_pods_m3u a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/plus.gif) no-repeat left center;
+}
+.flan_pods_rss_itunes a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/podcast_icon_original.png) no-repeat left center;
+}
+.flan_pods_subscription_links li.flan_pods_xspf {
+	margin: 0;
+}
+.flan_pods_xspf a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/plus.gif) no-repeat left center;
+}
+.flan_pods_all a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/arrow_right.gif) no-repeat left center;
+}
+/* ____________________________ Subscription Links List */
+html>body .flan_pods_tracklist li p.flan_pods_title {
+	float: none;
+}
+
+
+
+/* Styling for the ads */
+
+#flan_ads {
+	width: 300px;
+	float: right;
+}
+
+/* This sets the spacing for the sidebar boxes */
+
+.box,
+#flan_ads .cp_ad {
+	clear: both;
+	margin: 0 0 10px;
+/*
+	removed by MCS on Aug 06 - third column objects were floating to the right of the CP ad
+	float: left;
+*/
+	width: 300px;
+}
+
+/* Banner Boxes */
+
+#flan_ads .content .gutter {
+	padding: 10px;
+}
+#flan_ads .gutter p, #advertisements {
+	margin: 0 0 10px;
+}
+#flan_ads .content, #advertisements {
+	clear: both;
+	border: 1px solid #d8d8d8;
+	font: 90%/1.2em arial, verdana, sans-serif;
+	margin: 0 0 10px;
+}
+#flan_ads .content_300, #advertisements {
+	clear: both;
+	font: 90%/1.2em arial, verdana, sans-serif;
+	margin: 0 0 10px;
+}
+#flan_ads .content h4, #advertisements h4 {
+	background: #f5f5f5;
+	font-weight: bold;
+	border-bottom: 1px solid #d8d8d8;
+	font: 14px/1em arial, verdana, sans-serif;
+	padding: 3px 3px 3px 7px;
+	color: #333333;
+	text-transform: uppercase;
+}
+#flan_ads .content a {
+	color: #333;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+}
+#flan_ads .content a:hover {
+	background: #ffc;
+}
+#flan_ads .content ol {
+	list-style-position: inside;
+}
+#flan_ads .content ol li {
+	margin: 0 0 5px;
+	line-height: 1.2em;
+}
+
+/* 120 x 240 Banner Box */
+
+#box_120_240 {
+	background: #f5f5f5;
+}
+#box_120_240 .banner, #box_120_600_loc .banner {
+	float: left;
+	width: 120px;
+	margin: 0 10px 0 0;
+	border-right: 10px solid #fff;
+}
+
+/* 120 x 600 Banner Box */
+
+#box_120_600 {
+	background: #f5f5f5;
+}
+#box_120_600 .banner, #box_120_600_loc .banner {
+	float: left;
+	width: 120px;
+	margin: 0 10px 0 0;
+	border-right: 10px solid #fff;
+}
+
+/* 160 x 600 Banner Box */
+
+#box_160_600 {
+	background: #f5f5f5;
+}
+#box_160_600 .banner, #box_160_600_loc .banner {
+	float: left;
+	width: 160px;
+	margin: 0 10px 0 0;
+	border-right: 10px solid #fff;
+}
+
+/* Advertisements */
+
+#advertisements * {
+	margin: 0;
+	padding: 0;
+}
+#advertisements h4 {
+	margin: 0 0 10px;
+}
+#advertisements {
+	float: left;
+	width: 298px;
+	padding: 0 0 10px;
+}
+#advertisements .left {
+	width: 150px;
+	float: left;
+	border-right: 1px solid #e1e1e1;
+	text-align: center;
+}
+#advertisements .right {
+	text-align: center;
+}
+
+/* Poll Styling in the right column */
+
+#flan_ads .content *, #flan_nav .content * {
+	margin: 0;
+	padding: 0;
+}
+#flan_ads .content form {
+	padding: 10px;
+	margin: 0;
+}
+#flan_ads .content div {
+	margin: 0 0 5px;
+}
+#flan_ads .pollquestionstyle {
+	font: 13px/1.2em arial, verdana, sans-serif;
+	font-weight: bold;
+}
+#flan_ads .content_answers {
+	margin: 7px 0 0;
+	font-size: 11px;
+}
+#flan_ads .content_answers div {
+	margin: 0 0 7px;
+}
+#flan_ads .content a.faux_button {
+	padding: 3px;
+	margin: 7px 0 0;
+	display: block;
+}
+#flan_ads .content p#view_results {
+	margin: 7px 0 0;
+}
+
+/* Global Styles */
+
+#flan_content ul, #dn_content ul, #flan_content ol, #dn_content ol {
+	margin: 1em;
+/*	list-style-position: inside; */
+/*	this style is causing a lot of stupid list formatting that i just wind up fixing per-paper */
+}
+#flan_content p, #dn_content p {
+	margin: 0 0 1em;
+}
+
+/* Text Ads */
+
+#flan_text_ads * {
+	margin: 0 !important;
+}
+#flan_text_ads {
+	border: 1px solid #999999 !important;
+	margin: 0 0 10px !important;
+}
+.flan_text_ad {
+	border-bottom: 1px solid #d8d8d8 !important;
+}
+.flan_text_ad_title {
+	color: blue;
+	text-decoration: underline;
+}
+.flan_text_ad_action {
+	color: blue;
+}
+.flan_text_ad a {
+	background: #fff;
+	display: block;
+	padding: 5px !important;
+}
+.flan_text_ad a:hover {
+	background: #f5f5f5;
+}
+.flan_text_ad_bar {
+	text-align: center !important;
+	font-size: .9em !important;
+	padding: 3px !important;
+	background: #d8d8d8 !important;
+}
+
+/* Comments */
+
+.flan_comment {
+	background: #edf3fe;
+	margin: 0 0 .5em;
+	overflow: auto;
+}
+.flan_comment_response {
+	margin: 0 0 .5em;
+	background: #f5f5f5;
+}
+.flan_comment_response blockquote {
+	margin: 0 0 1em;
+	padding: 10px;
+	background: #ffff99;
+	border: 1px solid #ffcc33;
+}
+.flan_comment_gutter {
+	padding: 10px;
+}
+.flan_comment_body {
+	margin: 0 0 1em;
+}
+.flan_comment_reply, .flan_comment_read {
+	text-align: right;
+}
+.flan_comment_reply a, .flan_comment_post a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/plus.gif) no-repeat left center;
+	padding: 0 0 0 13px;
+}
+.flan_comment_article a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/page.gif) no-repeat left center;
+	padding: 0 0 0 12px;
+}
+.flan_comment_all a, .flan_comment_read a {
+	background: url(http://media.collegepublisher.com/media/assets/icons/arrow_right.gif) no-repeat left center;
+	padding: 0 0 0 12px;
+}
+ul.flan_comment_nav, #maincontent ul.flan_comment_nav {
+	margin: 0 0 1em !important;
+	padding: 0 !important;
+}
+ul.flan_comment_nav li.previous {
+	background: url(http://media.collegepublisher.com/media/assets/icons/minus.gif) no-repeat left center;
+	padding: 0 0 0 13px;
+        
+}
+ul.flan_comment_nav li.next {
+	text-align: right;
+	background: url(http://media.collegepublisher.com/media/assets/icons/plus.gif) no-repeat left center;
+	padding: 0 0 0 13px;
+	position: relative;
+	left: 0px;
+
+}
+.flan_comment_nav li {
+	display: inline;
+	margin: 0 1em 0 0 !important;
+}
+.flan_comment_valid_img {
+  padding: 0 0 .5em;
+}
+.flan_comment_valid fieldset {
+  border: none;
+}
+.flan_comment_valid label, .flan_comment_valid input {
+  display: block;
+  margin: 0 0 .5em;
+}
+
+/* Comment Form */
+
+.flan_disabled {
+	color: #999;
+}
+.post_comment_button {
+	text-align: center;
+	margin: 1.5em 0;
+}
+.post_comment_no {
+	padding: 2px 4px;
+	background: #cc0000;
+	color: #FFF;
+	margin: 0 0 1.5em;
+}
+.post_comment_no a {
+	color: #fff !important;
+	text-decoration: underline;
+}
+.cpfooter {
+	padding: 2em 0 2em 0;
+	font-size: 80%;
+}
+
+/* Breadcrumb */
+
+ul.flan_breadcrumb {
+  margin: 0 0 1em !important;
+  padding: 0 !important;
+  list-style: none;
+}
+.flan_breadcrumb li {
+  display: inline;
+  margin: 0 1px 0 0;
+  font-size: .9em;
+}
+.flan_breadcrumb li.flan_breadcrumb_parent {
+  display: inline;
+  background: url(/media/assets/icons/arrow_right.gif) no-repeat left center;
+}
+.flan_breadcrumb li {
+  display: inline;
+  background: url(/media/assets/icons/arrow_right_light.gif) no-repeat left center;
+}
+
+/* RSS Links */
+
+#flan_syndication_feeds li {
+  list-style: none;
+}
+.flan_rss {
+  padding: 0 0 0 14px;
+  background: url(/media/assets/icons/rss11.gif) no-repeat left center;
+}
+
+/* Make Some Elements Width Fixed 
+
+#flan_nav, #flan_content, #flan_ads {
+	overflow: hidden;
+}
+
+*/
+
+/* Global Clearing House */
+
+.flan_article_clear, .flan_clear, .cp_clear {
+       clear: both;
+}
+.cp_article_clear {
+       clear: both;
+}
+.flan_clear_auto:after, .cp_clear:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+.flan_clear_auto, .cp_clear {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+.flan_clear_auto, .cp_clear {
+  display: block;
+}
+* html .flan_clear_auto, *html .cp_clear {
+  height: 1%;
+}
+/* End Mac Hide */
+
+/* -------------- New Default Styles ------------------- */
+
+/* Light text */
+
+.cp_light, .cp_light p {
+  color: #999999;
+}
+
+/* Font Sizes */
+
+.cp_small, .cp_small p {
+  font-size: .9em;
+  line-height: 1.4em;
+}
+.cp_medium, .cp_medium p {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.cp_large, .cp_large p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
+/* RSS Link */
+
+.cp_rss {
+  padding: 0 0 0 14px;
+  background: url(/media/assets/icons/rss11.gif) no-repeat left center;
+}
+
+/* Tables */
+
+.cp_table {
+  border: 1px solid #d8d8d8;
+  width: 100%;
+  margin: 0 0 1em;
+}
+.cp_table th {
+  background: #cccccc;
+  padding: 7px;
+  text-align: left;
+}
+.cp_table td {
+  padding: 7px;
+}
+.cp_table p {
+  margin: 0 0 .5em !important;
+}
+.cp_even {
+	background: #f5f5f5;
+}
+.cp_odd {
+	background: #edf3fe;
+}
+
+/* Quotes */
+
+blockquote {
+	padding: 10px;
+	background: #ffffff;
+	border: 1px solid #d8d8d8;
+	margin: 0 0 1em;
+}
+blockquote em {
+	display: block;
+	font-weight: bold;
+	margin: 0 0 .3em;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+/* Simple Left Right Block */
+
+.cp_left_right {
+  margin: 0 0 1em;
+}
+.cp_left {
+  float: left;
+}
+.cp_right {
+  float: right;
+}
+
+/* Callout Left Right Block */
+
+.callout_left { 
+	width:33%; 
+	float:left; 
+	margin: 0 1em 1em 0;
+}
+.callout_right { 
+	width:33%; 
+	float:right; 
+	margin: 0 0 1em 1em;
+}
+
+
+/* Basic reply link */
+
+a.cp_reply {
+	background: url(http://media.collegepublisher.com/media/assets/icons/plus.gif) no-repeat left center;
+	padding: 0 0 0 13px;
+}
+
+/* Warning */
+
+.cp_warn {
+	background: #ffff99 url(/media/assets/icons/alert.gif) no-repeat 5px 4px!important;
+	margin: 0 0 1em !important;
+	padding: 5px 5px 5px 27px; !important;
+	font: 1em/1.2em arial, verdana, sans-serif !important;
+}
+.cp_warn strong {
+  color: #af0000 !important;
+}
+.cp_warn p {
+  color: #000000 !important;
+  margin: 0 !important;
+}
+
+/* Alert */
+
+.cp_alert {
+	background: #ffff99;
+	color: #AF0000;
+	margin: 0 0 1em !important;
+	padding: 5px; !important;
+	font: 1em/1.2em arial, verdana, sans-serif !important;
+}
+
+/* The Hider */
+
+.cp_hide {
+  display: none;
+}
+
+/* Forum */
+
+.cp_forum_trail {
+  margin: 0 0 1em !important;
+  padding: 0 !important;
+}
+.cp_forum_trail li {
+  font-size: 1.2em;
+  display: inline;
+}
+.cp_forum_trail li.cp_forum_trail_parent {
+  background: none;
+  padding: 0;
+}
+
+/* Forms */
+
+.cp_form fieldset {
+  border: 1px solid #d8d8d8;
+  margin: 0 0 1em;
+  padding: 5px 10px 10px; 
+}
+.cp_form legend {
+  font-weight: bold;
+  margin: 0 0 0 15px;
+  padding: 0 2px;
+  color: #000000;
+}
+.cp_form ul {
+  list-style: none;
+}
+.cp_form li {
+  padding: 5px;
+  margin: 0 0 5px;
+  clear: left;
+}
+.cp_form label {
+  float: left;
+  width: 120px;
+  text-align: right;
+  padding: 3px 10px 0 0;
+}
+.cp_form input, .cp_form select, .cp_form textarea {
+  width: 250px;
+  margin: 0 0 3px;
+  float: left;
+}
+.cp_small_form input, .cp_small_form select {
+  width: 500px;
+  margin: 0 3px;
+}
+.cp_form img {
+  margin: 1px 0 0 3px;
+  float: left;
+}
+.cp_form .cp_alert {
+  margin: 0 0 0 130px !important;
+  clear: both;
+  width: 240px;
+}
+.cp_form .cp_radio {
+  width: 250px;
+  border: none;
+  margin: 0 0 3px;
+  float: left;
+}
+.cp_form .cp_radio input {
+  float: none;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+.cp_form .cp_check input {
+  float: none;
+  width: auto;
+  margin: 0 5px 0 0;
+}
+.cp_form .cp_image_verify img {
+  margin: 0 10px 0 0;
+}
+.cp_form .cp_image_verify li {
+  list-style-position: outside;
+}
+.cp_form .cp_image_verify input, .cp_form .cp_image_verify label {
+  float: none;
+  width: 250px;
+  text-align: left;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.cp_form .cp_submit {
+  text-align: center;
+}
+.cp_form .cp_submit input {
+  width: auto;
+  float: none;
+}
+
+/* Display Staff Page */
+
+#cp_staff {
+	border-top: 1px solid #ccc;
+}
+#cp_staff .staff_member {
+	float: left;
+	width: 100%;
+	clear: left;
+	border-bottom: 1px solid #ccc;
+	padding: 1em 0 1em;
+}
+#cp_staff .staff_member img {
+	border: 0px;
+	float: left;
+	width: 75px;
+	margin: 0 1em 0 0;
+}
+#cp_staff .staff_member .cp_staff_name {
+	float: left;
+	width: 50%;
+}
+#cp_staff .staff_member .cp_staff_name dt {
+	font-size: 1.5em;
+	margin: 0 0 .2em;
+}
+#cp_staff .staff_member .cp_staff_name dd {
+	font-size: 1.2em;
+}
+#cp_staff .staff_member .cp_staff_contact {
+	float: left;
+}
+#cp_staff .staff_member .cp_staff_contact dt {
+	font-weight: bold;
+}
+#cp_staff .staff_member .cp_staff_contact dd {
+	margin: 0 0 .2em;
+}
+iframe {
+	border: 0px !important;
+	/*height: 240px !important;*/
+	overflow: hidden !important;
+}
+/*---------------------*/
+
+
+
+
+
+/** Breaking News
+|_________________________________________________________ */
+#cp_bn_wrap {
+	font: 1em/1.4em arial, sans-serif;
+}
+#cp_bn_wrap * {
+	margin: 0px;
+	padding: 0px;
+}
+#cp_bn_wrap a {
+	display: block;
+	background: #900000 url(http://media.collegepublisher.com/media/assets/images/breaking_news_bkg.jpg) 0 0 repeat-x;
+	margin: 0 0 10px;
+	border: 5px solid #900000;
+	text-decoration: none;
+}
+#cp_bn_wrap a:hover {
+	border: 5px solid #de0000;
+	background: #de0000;
+}
+#cp_bn_wrap a .gutter {
+	margin: 0px;
+	padding: 7px;
+	border: 1px solid #fff;
+	position: relative;
+    background: transparent;
+}
+#cp_bn_wrap a h2,
+#cp_bn_wrap a h3,
+#cp_bn_wrap a h4,
+#cp_bn_wrap a p {
+	color: #fff;
+}
+#cp_bn_wrap a h2 {
+	font-family: "Trebuchet MS", serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 0 0 .5em;
+}
+#cp_bn_wrap a h3 {
+	font-size: 22px;
+	font-style: italic;
+	margin: 0 0 .25em;
+}
+#cp_bn_wrap a h4 {
+	font-size: 16px;
+	margin: 0 0 .5em;
+}
+#cp_bn_wrap a p {
+	font-size: 11px;
+	line-height: 13px;
+	margin: 0px;
+}
+#cp_bn_wrap a .with_img {
+	float: left;
+	width: 65%;
+}
+#cp_bn_wrap a img {
+	width: 32%;
+	float: right;
+	border: 0px;
+	margin: 0px;
+}
+#cp_bn_article_header {
+	background: #de0000 url(http://media.collegepublisher.com/media/assets/images/breaking_news_bkg.jpg) 0 0 repeat-x;
+	color:#fff;
+	font-family:'trebuchet ms', serif;
+	text-transform:uppercase; 
+	font-size: 20px;
+	line-height: 40px;
+	text-indent:.3em;
+}
+/* ______________________________________________________ **/
+
+/** Auto Pull Quote
+|_________________________________________________________ */
+blockquote.cp_pullquote {
+	border: 0px;
+	border-top: 3px double #000;
+	border-bottom: 3px double #000;
+}
+blockquote.cp_pullquote p {
+	margin: 0px !important;
+	font: 18px/22px georgia, serif;
+}
+blockquote.cp_pullquote p:first-letter {
+	text-transform: uppercase;
+}
+/* ______________________________________________________ **/
+
+
+/*  fixing article toolbar box - mcs 12/5/06   */
+
+/* CP Article tools */
+
+#cp_article_top {
+       padding: 10px 0 0 0 !important;
+       border-bottom: 1px solid #ccc;
+       margin: 0 0 15px 0;
+}
+#cp_article_top ul, #cp_article_tools ul, #cp_article_bottom ul {
+       margin: 0;
+       padding: 0;
+}
+/* ______________________________________________________ **/
+
+/** New Styles for 300x250 Ads -- EDF 20070206
+|	Removes 'Advertisement' slug by default
+|_________________________________________________________ */
+#flan_ads .cp_ad h4.ad_slug {
+	font: normal 10px/14px 'trebuchet ms', arial, sans-serif;
+	color: #aaa;
+	background: none;
+	text-align: center;
+	text-transform: uppercase;
+	display: none; /*  oh yeah... we want it off by default */
+}
+/* ______________________________________________________ **/
+#cp_article_bottom {
+       margin: 15px 0;
+}
+#cp_article_top ul {
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#cp_article_top li, #cp_article_bottom li, #cp_story_bot_nav {
+       list-style: none;
+       font-size: 11px;
+       line-height: 17px;
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#cp_article_top li a, #cp_article_bottom li a, #cp_story_bot_nav a {
+       color: #333333 !important;
+}
+#cp_article_top li a:hover, #cp_article_bottom a:hover {
+       color: #000000 !important;
+}
+#cp_article_top_left {
+       float: left;
+       width: 230px;
+}
+#cp_article_top_left li {
+       display: inline;
+       margin: 0 5px 0 0 !important;
+}
+#cp_article_top_right, #cp_article_bottom_right {
+       float: right;
+       width: 190px;
+       text-align: right;
+}
+li#cp_article_discuss a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/discuss.gif) no-repeat left -1px;
+       padding: 0 0 0 17px;
+}
+li#cp_article_print a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/print.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#cp_article_email a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/email.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#cp_article_more a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/down.gif) no-repeat left 50%;
+       padding: 0 0 0 17px;
+}
+li#cp_article_blog a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/blogger.gif) no-repeat left 50%;
+}
+li#cp_article_facebook a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/facebook.gif) no-repeat left 50%;
+}
+li#cp_article_live a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/livejournal.gif) no-repeat left 50%;
+}
+li#cp_article_digg a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/digg.gif) no-repeat left 50%;
+}
+li#cp_article_news a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/newsvine.gif) no-repeat left 50%;
+}
+li#cp_article_deli a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/delicious.gif) no-repeat left 50%;
+}
+li#cp_article_yaho a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/yahoo.gif) no-repeat left 50%;
+}
+li#cp_article_goog a {
+       background: url(http://media.collegepublisher.com/media/assets/icons/google.gif) no-repeat left 0;
+}
+li.cp_article_page div {
+       /* Hides from IE-mac \*/
+       background: url(http://media.collegepublisher.com/media/assets/icons/page.gif) no-repeat left center;
+       padding: 0 0 0 17px;
+       float: right;
+       /* End hide from IE-mac */
+}
+#cp_story_text {
+       margin: 0 0 15px 0;
+}
+#cp_article_tools {
+	margin: 0 0 25px !important;
+	padding: 0 0 5px 0;
+}
+p.cp_article_more_tools {
+       font-weight: bold !important;
+       margin: 0 !important;
+       padding: 0 !important;
+       font-size: 12px !important;
+}
+p.cp_article_tools_header {
+       font-weight: bold !important;
+       margin: 0 0 8px !important;
+       padding: 0 !important;
+       font-size: 11px;
+}
+#cp_article_tools .cp_article_gutter {
+       padding: 5px !important;
+}
+#cp_article_tools ul {
+       display: inline !important;
+       list-style: none !important;
+       margin: 0 !important;
+       padding: 0 !important;
+}
+#cp_article_tools li {
+       display: inline !important;
+       list-style: none !important;
+	   margin: 0 !important;
+	   padding: 0 !important;
+}
+#cp_article_tools li a {
+       display: inline !important;
+       font-size: 10px !important;
+       margin: 0 3px 0 0 !important;
+       padding: 3px 0 3px 17px !important;
+}
+#cp_article_tools li a {
+       display: inline !important;
+       font-size: 10px !important;
+}
+#cp_article_tools_book {
+       margin: -12px 0 0 5px !important;
+       clear: left
+}
+html> body #cp_article_tools_book {
+       margin: 27px 0 0 0 !important;
+       position: relative;
+       top: -5px;
+       left: 5px;
+}
+#cp_article_tools_blog {
+       float: left !important;
+       width: 0px !important;
+
+}
+#cp_article_tools_rss {
+       float: right !important;
+       width: 140px !important;
+       border-left: 1px solid #fff !important;
+}
+html > body #cp_article_tools_rss {
+       width: 160px !important;
+}
+#cp_story_bot_nav {
+       margin: 0 0 15px !important;
+       text-align: right;
+}
+#cp_continued {
+	   font-size: 11px;
+	   line-height: 17px;
+       margin: 0 0 15px !important;
+}
+
+*html #cp_article_tools {
+       height: 47px;
+}
+
+
+
+
+/* Beta spry more section stuff jb */
+
+.RSSItemListRow {
+	padding: 4px 6px;
+	line-height: 1.1em;
+	color: #000;
+}
+#slider2_wrap .slider2_hot {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/lightning.png) no-repeat center left;
+	text-indent: -1000em;
+	display: block;
+	float: left;
+	width: 19px;
+	height: 16px;
+}
+.RSSItemListSchool {
+	line-height: 1.3em;
+	font-size: 10px;
+	color: #666;
+}
+.FlippyEvenRow { background-color: #eee; }
+.ListBoxItemHover {	background-color: #ff9; color: #000; cursor: pointer; }
+.SelectedListBoxItem { background: #ff0; color: #000; }
+.RSSItemListFeedback {
+	height: 32px;
+	margin: 75px auto auto auto;
+}
+.RSSItemListFeedback td {
+	font: normal 0.9em/1.4em trebuchet ms;
+	color: #666;
+}
+
+.ClearAll {
+	clear: both;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.SpryHiddenRegion {
+   visibility: hidden;
+}
+/* JB cnn style box */
+
+/* Start of content slider2 Styles */
+#slider2_wrap {
+	clear: left;
+	width: 300px;
+	margin: 10px 0;
+}
+
+#slider2_wrap h3 a {
+	color: #333 !important;
+	padding-right: 20px;
+	background: url(/media/assets/icons/fff/bullet_go.png) no-repeat right center;
+	border-bottom: 1px dashed #ccc;
+	display: block;
+}
+#slider2_wrap h3 a:hover {
+	background-color: #ff9;
+}
+
+#slider2_wrap .lead_wrap {
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 0 1px 1px 1px;
+}
+#slider2_wrap .contentslide {
+	padding: 1px;
+	position: relative;
+	background: #fff;
+	height: 257px; /* To prevent box from collapsing */
+}
+#slider2_wrap .contentdiv_scroller {
+	padding: 5px 9px 0 5px;
+	height: 230px;
+	overflow: auto;
+	position: relative;
+	background: #fff;
+}
+#slider2_wrap .linkbar {
+	border-top: 1px solid #ddd;
+	background: #fff url(http://media.collegepublisher.com/media/assets/images/box_gradient.gif) repeat-x;
+	line-height: 20px;
+	padding: 0 4px;
+	margin-top: 1px;
+	vertical-align: middle;
+	text-align: right;
+	font-size: 0.95em;
+	color: #666;
+}
+#slider2_wrap .linkbar img {
+	vertical-align: middle;
+	border: 0;
+}
+#slider2_wrap .linkbar a {
+	color: #fff;
+}
+#slider2_wrap .linkbar a:hover {
+	background: #ff9;
+}
+
+#slider2_wrap .contentslide .contentdiv {
+	display: none;
+}
+#slider2_wrap .contentslide a {
+	color: #000;
+}
+#slider2_wrap .contentdiv_scroller a:hover * {
+	background-color: #ff9;
+	color: #000; 
+	display: block;
+}
+
+#slider2_wrap div.pagination_wrap {
+	background: #eee url(http://media.collegepublisher.com/media/assets/images/bottom_line.gif) repeat-x bottom left;
+	padding: 0 0 0 6px;
+	font-size: 11px;
+}
+#slider2_wrap .pagination {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+
+#slider2_wrap .pagination ul,
+#slider2_wrap .pagination li {
+	display: inline;
+}
+#slider2_wrap .pagination a {
+	font: normal 11px/20px arial, helvetica, sans-serif;
+	padding: 3px 4px 3px;
+	text-decoration: none; 
+	color: #333;
+	border: 1px solid #ccc;
+	display: block;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 3px;
+}
+#slider2_wrap .pagination a span {
+	text-indent: -1000em;
+	display:block;
+}
+#slider2_wrap .pagination a#tab_mp span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/newspaper_pop.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_me span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/email_go.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_mc span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/user_comment.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_pc span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/ipod.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_ce span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/date.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_mb span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/comments.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_ci span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/newspaper_add.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_rc span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/transmit.png) no-repeat top left;
+}
+#slider2_wrap .pagination a#tab_nc span {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/transmit_blue.png) no-repeat top left;
+}
+
+#slider2_wrap .pagination a:hover, 
+#slider2_wrap .pagination a.selected {
+	background: #fff url(http://media.collegepublisher.com/media/assets/images/box_gradient.gif) repeat-x 0 1px;
+	border-bottom: 1px solid #fff;
+}
+#slider2_wrap .pagination a:hover {
+	border: 1px solid #ccc;
+}
+#slider2_wrap .pagination a:hover.selected {
+	border-bottom: 1px solid #fff;
+}
+
+#slider2_wrap .pagination a.pagination_next,
+#slider2_wrap .pagination a.pagination_next:hover {
+	font: normal 16px/22px arial, helvetica, sans-serif;
+	padding: 5px 5px 0px;
+	border: none;
+	background: none;
+	text-decoration: none; 
+	color: #fff;
+}
+#slider2_wrap .pagination img {
+	vertical-align: middle;
+	padding-bottom: 2px;
+	border: none;
+}
+.safari .box { 
+	float: none !important;
+}
+.ie6 #slider2_wrap .pagination a {
+	width: 16px;
+	line-height: 16px;
+}
+/* End of slider styles. */
+
+/* Stop exploding designs from wrong ad sizes. */
+.cp_local_ad,
+.cp_banner_client {
+	overflow: hidden;
+}
+
+/* VIDEO CAROUSEL STYLES*/
+.carousel-component { 
+	position:relative;
+	overflow:hidden;
+	visibility:hidden; /* component turns it on when first item is rendered */
+}
+				
+.carousel-component ul.carousel-list { 
+	width:10000000px;
+	position:relative;
+	z-index:1; 
+}
+
+.carousel-component .carousel-list li { 
+	float:left;
+	list-style:none;
+	overflow:hidden;
+}
+
+.carousel-component .carousel-vertical li { 
+	float:none;
+	margin-bottom:0px;
+}
+
+.carousel-component ul.carousel-vertical { 
+	width:auto;
+}
+
+.carousel-component .carousel-clip-region { 
+	overflow:hidden;
+	margin:0px auto;
+	position:relative; 
+}
+/**
+ * Safe to override. It is safe to override background, padding, margin, color,
+ * text alignment, fonts, etc. Define a separate CSS file and override your style
+ * preferences.
+ **/
+#roo_component_wrapper {
+	width: 300px;
+        margin: 0 0 10px 0;
+}
+#roo_component_header {
+	padding: 0;
+	margin: 0;
+	background: #eee;
+	border-bottom: 1px solid #c2c2c2;
+}
+#roo_component_header li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+	background: #eee;
+}
+#roo_component_header li a{
+	font: normal 10px/23px arial, helvetica, sans-serif;
+	color: #609fdf;
+	padding: 0 0 0 4px;
+}
+#roo_component_header li h5 {
+	padding: 2px 6px 3px 26px;
+	background: #fff;
+	font: bold 14px/1.2em Arial, Helvetica, sans-serif;
+	margin: 0 0 0 6px;
+	border: 1px solid #c2c2c2;
+	border-bottom: 1px solid #fff;
+	float: left;
+	background: #fff url(http://collegepublisher.com/media/assets/icons/fff/television.png) no-repeat 6px 1px;
+}
+.ie6 #roo_component_header li h5 {
+	margin: 0 0 0 3px;
+}
+.safari #roo_component_header li h5 {
+	padding: 2px 6px 4px 26px;
+	border-bottom: 1px solid #fff;
+}
+#roo_component {
+	width: 298px;
+	border: 1px solid #c2c2c2;
+	border-top: 0; 
+}
+.carousel-component { 
+	background: #fff;
+	border: 0;
+	padding: 0px;
+	margin: 0 auto;
+	-moz-border-radius: 0px;
+	color: #618cbe;
+}
+.carousel-component ul.carousel-list { 
+	margin: 0px;
+	padding: 0px;
+}
+.carousel-component .carousel-prev { 
+	position: absolute;
+	top: 27px;
+	z-index: 3;
+	cursor: pointer; 
+	left: 0; 
+}
+.carousel-component .carousel-next { 
+	position: absolute;
+	top: 27px;
+	z-index: 3;
+	cursor: pointer; 
+	right: 0; 
+}
+#roo_component .carousel-button {
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: -1000em;
+}
+#roo_component #prev-arrow {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/control_start_blue.png);
+}
+#roo_component #next-arrow {
+	background: url(http://media.collegepublisher.com/media/assets/icons/fff/control_end_blue.png);
+}
+.carousel-component .carousel-list li { 
+	text-align:center;
+	margin: 4px 0px 0px 0px;
+	padding: 0px 0px 4px 0px;
+	font: 9px verdana,arial,sans-serif;
+	color:#666;
+	width: 130px; 
+}
+.carousel-component .carousel-vertical li { 
+}
+.carousel-component ul.carousel-vertical { 
+}
+.carousel-component .carousel-list li a { 
+	display:block;
+	height: 55px;
+	border: 2px solid #fff;
+	outline:none;
+	-moz-outline:none; 
+	text-decoration: none !important;
+	color: #000;
+}
+.carousel-component .carousel-list li a:hover { 
+	background: #fffccc;
+	border: 2px solid #fffccc;
+	text-decoration: none !important;
+	color: #000;
+}
+.carousel-component .carousel-list li.active a { 
+	border: 2px solid #708fc7; 
+}
+.carousel-component .carousel-list li strong { 
+	display:block; 
+}
+									
+.carousel-component .carousel-list li {
+	position: relative;
+}
+.carousel-component .carousel-list li img { 
+	border:1px solid #999;
+	display:block; 
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 50px;
+	height: 50px;
+}
+.carousel-component .carousel-list li div.roo_module_title {
+	width: 70px;
+	overflow: hidden;
+	position: absolute;
+	top: 2px;
+	right: 0;
+	z-index: 4;
+	text-align: left;
+	color: black;
+	text-decoration: none;
+	line-height: 1em;
+}
+.carousel-component .carousel-list li span.roo_module_play {
+	text-transform: uppercase;
+	overflow: inherit;
+	color: #609fdf !important;
+	text-decoration: none;
+	display: block;
+}
+.carousel-component .carousel-list li a:hover span.roo_module_play {
+	text-decoration: underline;
+}
+
+/** CP Video Stand alone page Styles*/
+
+#cp_video {
+	background: #e1e1e1;
+	color: #000;
+	text-align: center; /* for wrap centering */
+	font: 16px/18px "trebuchet ms", helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 1em;
+}
+#cp_video #cp_video_wrap {
+	width: 987px;
+	margin: 0px auto;
+	padding: 0;
+	text-align: left;
+	border: 1px solid #888;
+	background: #fff;
+}
+#cp_video .leaderboard {
+	text-align: center;
+	background: #eee;
+	margin: 0;
+	padding: 0;
+}
+#cp_video .leaderboard img {
+	padding: 5px 0;
+}
+#cp_video #header {
+	width: 100%;
+	margin: 0 0 1.5em;
+}
+#cp_video #header h1 {
+	width: 100%;
+	font: bold 1.8em/1.8em georgia, "times new roman", serif;
+	text-indent: -1000em;
+}
+#cp_video #header h1 a {
+	display: block;
+	height: 107px;
+}
+
+#cp_video #top_bar {
+	width: 967px;
+	margin: 10px 10px 0 10px;
+	font-size: 80%;
+	overflow: hidden;
+	background: #2B004D;
+}
+#cp_video #top_bar a,
+#cp_video #top_bar a:visited {
+	color: #fff;
+	text-decoration: underline;
+}
+#cp_video #top_bar h3 {
+	font: normal 1.1em/27px arial, helvetica, sans-serif;		
+	display: inline;
+	color: #fff;
+	padding: 0 0 0 10px;
+}
+#cp_video #video_iframe {
+	padding: 0 0 0 5px;
+	margin: 0 0 1em;
+	float: left;
+}
+#cp_video #roo_frame {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: none;
+	float: left;
+}
+#cp_video #video_feed {
+	float: left;
+	background: #fff url(http://media.collegepublisher.com/media/assets/images/feed_gradient.gif) repeat-y top left;
+	padding: 0;
+	margin: 0;
+	width: 200px;
+	height: 920px;
+	overflow: hidden;
+}
+#cp_video #video_feed h2 {
+	background: #e7e7e7;
+	font: bold 12px/1.6em arial, helvetica, sans-serif;
+	color: #666;
+	width: 100%;
+	padding: 0 0 0 .5em;
+}
+#cp_video #video_feed ul{
+	padding: 0 0 0 13px;
+	margin: 0;
+}
+#cp_video #video_feed li {
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0;
+	display: block;
+	border-bottom: 1px solid #c2c2c2;
+}
+#cp_video #video_feed li:hover {
+	background: #fffccc;
+}
+#cp_video #video_feed img {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0;
+	border: 1px solid #c2c2c2;
+}
+#cp_video #video_feed li h3 {
+	font: bold 1em/1.2em arial, helvetica, sans-serif;
+	color: #666;
+	text-transform: none;
+	width: 45%;
+	float: left;
+}
+#cp_video #video_feed li h3 span  {
+	color: #609fdf;
+	text-transform: uppercase;
+	display: block;
+}
+#cp_video #video_feed li a:hover span{
+	text-decoration: underline;
+}
+#cp_video .cp_clear {
+	clear: both;
+}
+#cp_video #footer {
+	width: 100%;
+	text-align: left;
+	border-top: 4px solid #2B004D;
+	background: #fff;
+}
+#cp_video #footer p {
+	padding: .5em;
+	color: #666;
+	font-size: 11px;
+}
+#cp_video #footer p a {
+	color: #2B004D;
+	font-weight: bold;
+	text-decoration: none;
+}

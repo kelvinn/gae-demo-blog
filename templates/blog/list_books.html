@@ -1,0 +1,5 @@
+<div class="books">
+    {% for item in book_results %}
+        <a href="{{ item.book_link }}"><img src="{{ item.book_img }}" class="book" alt="Book" /></a>
+    {% endfor %}
+</div>

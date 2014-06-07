@@ -1,0 +1,19 @@
+/* makes various layout elements invisible for a cleaner printed page */
+#PSUBranding {height:106px;}
+#SiteHeader {border-bottom:1px solid #000000; margin:1em 0 0 0;}
+#SiteHeaderTitle {font-size:2em; font-family:garamond,georgia,serif; font-weight:bold;}
+#SiteHeaderTitle a {color:#000000; text-decoration:none;}
+#PSUHeaderLinks,
+#PSUSearch,
+#PSUSearchLinks,
+#PSUPortalBackground,
+#SiteHeaderLinks,
+#Nav1Background,
+#PSUColumnLeft,
+.QuickLinks,
+#PSUColumnRight,
+#WindletsHorizontalBackground,
+#SiteFooterBackground,
+#PSUFooterBackground,
+#PSUMarginRight,
+#udm {display:none;}

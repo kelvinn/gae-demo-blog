@@ -1,0 +1,63 @@
+application: kelvinismapp
+version: 1
+runtime: python
+api_version: 1
+default_expiration: "7d 5h"
+
+builtins:
+- remote_api: on
+
+inbound_services:
+- warmup
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /javascript
+  static_dir: javascript
+
+- url: /images
+  static_dir: images
+
+- url: /robots.txt
+  static_files: media/robots.txt
+  upload: media/robots.txt
+
+- url: /favicon.ico
+  static_files: media/favicon.ico
+  upload: media/favicon.ico
+
+- url: /media
+  static_dir: media
+
+- url: /stats.*
+  script: $PYTHON_LIB/google/appengine/ext/appstats/ui.py
+
+- url: /oauth2callback
+  script: oauth2client/appengine.py
+  
+- url: /admin/.*
+  script: admin.py
+  login: admin
+
+- url: /.*
+  script: main.py
+
+admin_console:
+  pages:
+  - name: Appstats
+    url: /stats/
+
+  - name: View Entries
+    url: /admin/view/?item=entry
+
+  - name: View Countries
+    url: /admin/view/?item=country
+
+  - name: Add Entry
+    url: /admin/add/?item_type=entry
+
+  - name: Add Country
+    url: /admin/add/?item_type=country
+

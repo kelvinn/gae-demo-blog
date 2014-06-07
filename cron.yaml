@@ -1,0 +1,11 @@
+cron: 
+- description: sync online feeds
+  url: /syncfeeds/
+  schedule: every 60 minutes
+
+
+- description: My Weekly Backup
+  url: /_ah/datastore_admin/backup.create?name=BackupToCloud&kind=Blob&kind=Country&kind=Entry&kind=Tag&filesystem=gs&gs_bucket_name=kelvinismapp
+  schedule: every saturday 22:45
+  timezone: Australia/NSW
+  target: ah-builtin-python-bundle

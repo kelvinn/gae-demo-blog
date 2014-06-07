@@ -1,0 +1,1 @@
+{"_module": "oauth2client.client", "_class": "OAuth2Credentials", "access_token": "ACCESS_TOKEN", "token_uri": "https://accounts.google.com/o/oauth2/token", "invalid": false, "client_id": "ABCD.apps.googleusercontent.com", "client_secret": "SECRET", "token_expiry": "", "refresh_token": "TOKEN", "user_agent": "google-api-client-python-plus-cmdline/1.0"}

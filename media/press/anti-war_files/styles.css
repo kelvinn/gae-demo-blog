@@ -1,0 +1,587 @@
+/* User-generated stylesheet */
+/* Start Editing Colors */
+
+/* Set body background color */
+
+body {
+  background: #000000;
+}
+
+/* Color the links */
+
+a { 
+	color: #002e13;
+}
+
+/* Color the links on hover */
+
+a:hover {
+	color: #800000;
+}
+
+/* Set nav background color */
+
+#flan_nav {
+  background: #060000;
+}
+
+/* Set nav header colors */
+
+#flan_nav h4 {
+  background: #060000;
+  color: #ffffff;
+}
+
+/* Color the nav links */
+
+#flan_nav li a {
+	color: #ffffff;
+}
+
+/* Color the nav links on hover */
+
+#flan_nav li a:hover {
+	background: #484848;
+}
+
+/* Set the background color for RSS link (hex should match hex of nav background) */
+
+#flan_nav li a.flan_rss {
+	background: #060000 url(http://media.collegepublisher.com/media/assets/icons/rss_icon_14x14.gif) no-repeat 7px 50%;
+}
+
+/* Set the background color for RSS link on hover (hex should match hex of nav link on hover selector) */
+
+#flan_nav li a:hover.flan_rss {
+	background: #484848 url(http://media.collegepublisher.com/media/assets/icons/rss_icon_14x14.gif) no-repeat 7px 50%;
+}
+
+/* End fixing the colors */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+  min-width: 975px;
+  text-align: center;
+	font: normal .9em/1.2em arial, verdana, sans-serif;
+}
+
+/* Structural Settings */
+
+#flan_wrap {
+  text-align: left;
+  margin: 0 auto;
+	width: 975px;
+	border-left: 1px solid #D5D5D5;
+	border-right: 1px solid #D5D5D5;
+	background: #ffffff url(http://media.collegepublisher.com/media/paper941/template/templatemedia/hass_line.gif) repeat-y -360px 0;
+}
+
+/* Header Styles */
+
+#flan_header * {
+	margin: 0;
+	padding: 0;
+}
+#flan_header {
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #D5D5D5;
+}
+
+#meta {
+	background: #000;
+	padding: 3px 10px;
+	border-top: 1px solid #fff;
+}
+.meta_date {
+	position: relative;
+	top: 15px;
+	left: 5px;
+}
+.meta_date p {
+	color: #fff !important;
+}
+
+/* Logo Style */
+
+h1#flan_logo {
+  width/**/:975; /* empty comments for IE5/win */
+  height/**/:107px;
+  line-height:107px; /* for IE5/win */
+  text-indent:0px; 
+}
+h1#flan_logo a {
+  display:block;
+  width/**/:975px; /* empty comments for IE5/win */
+  height/**/:107px;
+  line-height:107px; /* for IE5/win */
+  text-indent:-1000px; 
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/header.jpg) no-repeat left center;
+}
+
+/* Let's work out that mid section */
+
+#flan_body {
+	float: left;
+}
+#flan_nav {
+	float: left;
+	width: 140px;
+	padding: 0 0 1.5em;
+}
+#flan_body_wrap {
+	float: right;
+	width: 825px;
+	margin: 0 10px 0 0;
+}
+#flan_leader {
+	text-align: center;
+	padding: 5px 0;
+	margin: 0 0 10px 0;
+	background: #d5d5d5;
+}
+#flan_content {
+	float: left;
+	width: 525px;
+}
+#flan_content .gutter {
+	margin: 0 10px;
+}
+
+/* These are section page styles */
+
+.flan_section {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: 1px dotted #999;
+}
+.flan_section_title {
+	font-size: 22px;
+	line-height: 1.2em;
+	margin: 0 0 15px;
+	border-bottom: 1px solid #666;
+}
+.flan_section h2 {
+	font-size: 18px;
+	line-height: 1.2em;
+	margin: 0 0 2px;
+}
+.flan_section h3 {
+	font-size: 14px;
+	line-height: 1.2em;
+	margin: 0 0 5px;
+	font-weight: normal;
+}
+.flan_section h5 {
+	font: 14px/18px Georgia, Times New Roman, serif;
+	line-height: 1.2em;
+	margin: 0 0 5px;
+}
+.flan_section p {
+	margin: 0;
+}
+.flan_author {
+	text-transform: uppercase;
+}
+
+/* Time to massage the footer */
+
+#flan_footer {
+	clear: both;
+	border-top: 4px solid #dddddd;
+	background: #e5e5e5;
+	padding: 10px;
+	font: 11px/15px arial, verdana, sans-serif;
+}
+#flan_footer a {
+	color: #000;
+}
+#flan_footer a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* Left Nav Styles */
+
+#flan_nav h4 {
+  font: 1.2em/2.7em arial, verdana, sans-serif;
+	padding: 0 7px;
+	margin: 0;
+  text-shadow: 2px 2px 1px #000000;
+  text-align: right;
+font-weight: bold;
+}
+#flan_nav li {
+	list-style: none;
+	display: inline;
+}
+#flan_nav li a {
+	text-decoration: none;
+	font: 1em/1.6em arial, verdana, sans-serif;
+	padding: 0 0 0 7px;
+	display: block;
+}
+#flan_nav li ul a {
+	padding: 0 0 0 14px;
+}
+#flan_nav li ul a:before {
+	content: "- ";
+}
+#flan_nav li a.flan_rss {
+	padding: 0 0 0 27px;
+}
+
+/* Client Banners */
+
+#banner_client_1 {
+	padding: 10px 0;
+	text-align: center;
+}
+
+/* Ads */
+
+#flan_ads {
+	margin: 0 0 0;
+}
+
+/* Hides from IE-mac \*/
+* html #flan_nav {
+	float: left;
+	width: 130px;
+}
+* html #flan_wrap {
+	background: #ffffff url(http://media.collegepublisher.com/media/paper941/template/templatemedia/hass_line.gif) repeat-y -370px 0;
+}
+/* End hack */
+
+
+/* Navigation */
+
+/* Top Horizonal Section Links */
+
+
+ul#horiz_nav {
+  margin: 0;
+  padding: 0;
+  clear: left;
+  list-style: none;
+  position: relative;
+  top: -5px;
+  left: 530px;
+}
+
+.ie6 #horiz_nav {
+	width: 500px;
+}
+
+ul#horiz_nav li {
+  float: left;
+  list-style: none;
+}
+
+ul#horiz_nav a {
+  padding: 7px 10px 5px 10px;
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  height: 17px;
+}
+
+ul#horiz_nav a:hover {
+  color: #dadada;
+}
+
+
+#navsection_frontpage {
+  background: #036 url(http://media.collegepublisher.com/media/paper1130/template/templatemedia/buttgrad-blue.gif) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+}
+
+#navsection_News {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/news.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+#navsection_Arts {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/sports.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+}
+
+#navsection_Opinion {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/opinion.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+}
+
+#navsection_Sports {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/arts.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+}
+
+.ie6 #navsection_frontpage {
+  background: #036 url(http://media.collegepublisher.com/media/paper1130/template/templatemedia/buttgrad-blue.gif) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+  width: 85px;
+}
+
+.ie6 #navsection_News {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/news.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 60px;
+}
+
+.ie6 #navsection_Arts {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/sports.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+  width: 112px;
+}
+
+.ie6 #navsection_Opinion {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/opinion.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+  width: 70px;
+}
+
+.ie6 #navsection_Sports {
+  background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/arts.jpg) repeat-x left bottom;
+  margin: 0 0 0 3px;
+  border: 1px solid #fff;
+  width: 70px;
+}
+
+/* Front Page Styles */
+
+.flan_lead {
+	margin: 0 0 20px;
+}
+.flan_lead h2 {
+	font-weight: bold;
+}
+.flan_lead img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.flan_fp_section {
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #d8d8d8;
+}
+.flan_fp_section img {
+	float: left;
+	margin: 0 5px 5px 0;
+}
+.flan_fp_section h4 {
+	font-size: 1.5em;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+#section_header_News h2 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #07193e url(http://media.collegepublisher.com/media/paper941/template/templatemedia/news.jpg) repeat-x left top;
+	color: #fff;
+}
+
+.fp_section_header_News h3 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #07193e url(http://media.collegepublisher.com/media/paper941/template/templatemedia/news.jpg) repeat-x left top;
+}
+.fp_section_header_link a {
+	color: #fff !important;
+}
+.fp_section_header_Arts h3 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #690606 url(http://media.collegepublisher.com/media/paper941/template/templatemedia/sports.jpg) repeat-x left top;
+}
+
+#section_header_Arts h2 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #690606 url(http://media.collegepublisher.com/media/paper941/template/templatemedia/sports.jpg) repeat-x left top;
+	color: #fff;
+}
+
+.fp_section_header_Opinion h3 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #2b0b40 url(http://media.collegepublisher.com/media/paper941/template/templatemedia/opinion.jpg) repeat-x left top;
+}
+
+#section_header_Opinion h2 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #2b0b40 url(http://media.collegepublisher.com/media/paper941/template/templatemedia/opinion.jpg) repeat-x left top;
+	color: #fff;
+}
+
+.fp_section_header_Sports h3 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #007619 url(http://media.collegepublisher.com/media/paper941/template/templatemedia/arts.jpg) repeat-x left top;
+}
+
+#section_header_Sports h2 {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 5px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	text-transform: uppercase;
+	background: #007619 url(http://media.collegepublisher.com/media/paper941/template/templatemedia/arts.jpg) repeat-x left top;
+	color: #fff;
+}
+
+#section_header_Sports h2 a {
+	color: #fff;
+}
+.flan_section_lead {
+	float: left;
+	width: 300px;
+}
+
+.flan_section_lead img {
+	float: left !important;
+	margin: 0 5px 0 0;
+	border: 1px solid #d8d8d8;
+	padding: 3px;
+}
+
+.photo_credit {
+	font-size: 10px;
+	color: #484848;
+	font-weight: bold;
+	clear: left;
+}
+
+.flan_fp_section ul {
+	float: right;
+	width: 155px;
+	margin: 0;
+	padding: 0;
+}
+
+.fp_feat_headlines {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin: 0 0 5px;
+	font-size: 14px
+	color: #484848;
+}
+
+.flan_section_more {
+	text-align: right;
+}
+
+.flan_clear {
+	clear: both;
+}
+
+.flan_section_lead_text h4 {
+	color: #484848 !important;
+}
+
+.flan_section_lead_text p {
+	padding: 0 15px 0 0;
+}
+
+
+
+
+
+
+
+/* VIDEO PLAYER OVERRIDE STYLES*/
+#cp_video {
+	background: #2E2E2E; /* Change Background Color*/
+}
+#cp_video #header h1 {
+	width: 100%;
+	/* Change Header Height and Background URL */
+	height: 110px;
+	background: url(http://media.collegepublisher.com/media/paper941/template/templatemedia/headernew.jpg) no-repeat 0 0;
+	text-indent: -1000em;
+	margin: 0;
+}
+#cp_video #top_bar {
+	margin: 0;
+	padding: 0;
+	/* Change Meta Bar Colors */
+	border-top: 1px solid #002E13;
+	border-bottom: 1px solid #002E13;
+	background: #002E13;	
+	width: 987px;
+}
+#cp_video #header #top_bar h3 a {
+	/* Change Meta Bar Link color */
+	color: #fff;
+}
+#cp_video #footer {
+	/* Change footer border and background */
+	border-top: 4px solid #dddddd;
+	background: #e5e5e5;	
+	padding: 10px 0;
+}
+#cp_video #footer p {
+	/* Change footer color */
+	color: #000;
+	padding: 0 0 0 10px;
+}
+#cp_video #footer p a {
+	/* Change footer link color */
+	color: #000;
+}
+
+

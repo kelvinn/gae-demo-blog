@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% load blog_extras %}
+{% block title %}Kelvinism.com {% if genre %}- {{ genre }}{% endif %}{% endblock %}
+{% block to_head %}
+    {% if genre %}
+        <link rel="alternate" type="application/rss+xml" title="Kelvin's Blog" href="/feeds/{{ genre }}/" />
+    {% endif %}
+    <link href="/stylesheets/shCore.css" type="text/css" rel="stylesheet" />
+    <link href="/stylesheets/shThemeDefault.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="/javascript/syntaxhighlighter.js"></script>
+    <script type="text/javascript">
+         SyntaxHighlighter.all()
+    </script>
+{% endblock %}
+
+{% block content %}
+<div id="bd">
+	<div id="yui-main">
+		<div class="yui-b">
+            <div class="yui-g">
+		        {% if entries %}
+		            {% for id in entries.object_list %}
+                            <div class="contentitem">
+		                    <span class="article-heading"><a href="{{ id.get_absolute_url }}">{{ id.title }}</a></span>
+		                    <h4>Published on {{ id.publish_date|date }} {% if id.country %} in <a href="/country/{{ id.country.slug }}/">{{ id.country.title }}</a>{% endif %}</h4>
+						    {% autoescape off %}
+                            
+                            {% ifequal id.genre "blog" %}
+                                {% if valid_user %}
+                                    {{ id.content }}
+                                {% else %}
+                                    {{ id.content|truncatewords_html:70 }} 
+
+                                {% endif %}
+                            {% else %}
+                                {{ id.content }}
+                            {% endifequal %}
+
+                            {% endautoescape %}
+                            <div class="clear"></div>
+                            </div>
+		            {% endfor %}
+		        {% else %}
+                    <p>No posts.{{ email }}</p> 
+		        {% endif %}
+
+                {% if entries.has_previous or entries.has_next %}
+				    <div id="page-navigation">
+				        {% if entries.has_previous %} <a  href="?page={{ entries.previous_page_number }}" class="pagenav" title="Prev"> < Prev</a> {% endif %}
+				        {% if entries.has_next %}<a href="?page={{ entries.next_page_number }}" class="pagenav" title="Next">Next ></a> {% endif %}
+				        <br />
+				        Page {{ entries.number }} of {{ entries.paginator.num_pages }}
+				    </div>
+			    {% endif %}
+		    </div>
+        </div>
+	</div>
+	<div class="yui-b">
+        {% if about_text %}
+	        <h4>About This Page</h4>
+                {% autoescape off %}
+                    <p>{{ about_text }}</p>
+                {% endautoescape %}
+        {% endif %}
+
+        {% if not valid_user and not email %}
+            <h4>Restricted Access</h4>
+            <p>Travel entries are limited to those on my contact list. </p>
+              <div id="google-login" style="margin-left: 15px"> 
+                <button onclick="window.location='{{ login_url }}'"
+                        style = "padding:3px;margin-top:8px;"> 
+                  <img src="https://www.google.com/favicon.ico" alt="Sign In with Google" style="margin-bottom:-3px;"/>&nbsp; Sign In with Google
+                </button>
+              </div> 
+
+        {% else %} {%if not valid_user and email %}blah 
+            <h4>Restricted Access</h4>
+            <p>Travel entries are limited to those on my contact list. Your email is currently not on my list.</p>
+        {% endif %}{% endif %}
+
+
+        <h4>Via {{ status.service_name }}</h4>
+        <p>{{ status.content }} (<a href="{{ status.link }}">{{ status.publish_date|timesince }} ago</a>)</p>
+
+        {% if more_entries %}
+            <h4>{{ more_type }} {% if genre %} <a href="/feeds/{{ genre }}/"><img src="/images/rss.png" alt="RSS"/></a>{% endif %}</h4>
+            <ul>
+                {% for entry in more_entries %}
+                    <li><a href="{{ entry.get_absolute_url }}">{{ entry.title}}</a>, {{ entry.publish_date|timesince }} ago</li>
+                {% endfor %}
+            </ul>
+            <br />
+        {% endif %}
+
+        {% if country_obj.map_url %}
+            <h4>Travel Map from Google's Fusion Tables</h4>
+            <iframe width="290px" height="300px" scrolling="no"  src="{{ country_obj.map_url }}"></iframe>
+            (<a href="{{ country_obj.map_url }}">View Full Map</a>)
+        {% endif %}
+
+        {% if country_list %}
+            <h4>Filter By Country</h4>
+            <ul>
+                {% for country in country_list %}
+                    <li><a href="/country/{{ country.slug }}/">{{ country }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+	</div>
+</div>
+{% endblock %}

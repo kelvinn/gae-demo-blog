@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load blog_extras %}
+{% block title %}Kelvinism.com - {{ object.title }}{% endblock %}
+
+{% block to_head %}
+    <link href="/stylesheets/shCore.css" type="text/css" rel="stylesheet" />
+    <link href="/stylesheets/shThemeDefault.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="/javascript/syntaxhighlighter.js"></script>
+    <script type="text/javascript">
+         SyntaxHighlighter.all()
+    </script>
+
+{% endblock %}
+
+{% block content %}
+
+<div id="bd" >
+	<div id="yui-main">
+		<div class="yui-b"><div class="yui-g">
+                    {% if object %}
+                        <div class="contentitem">
+                            <span class="article-heading"><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></span>
+                            <h4>Published on {{ object.publish_date|date }} {% if object.country %} in <a href="/country/{{ object.country.slug }}/">{{ object.country.title }}</a>{% endif %}</h4>
+                            {% autoescape off %}
+			      
+                              {% ifequal object.genre "blog" %}
+				   {% if valid_user %}
+					{{ object.content }}
+				   {% else %}
+				        {{ object.content|truncatewords_html:70 }} 
+				   {% endif %}
+			      {% else %}
+				   {{ object.content }}
+			      {% endifequal %}
+			      {% endautoescape %}
+			      <div class="clear"></div>
+                        </div>
+
+                        <br />
+                        <br />
+			 {% ifnotequal request.get_full_path  "/" %}
+			      <div id="disqus_thread"></div>
+
+			 
+			      <script type="text/javascript">
+				/**
+				  * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+				  */
+				(function() {
+				 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				 dsq.src = 'http://kelvinism.disqus.com/embed.js';
+				 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			      </script>
+			      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=kelvinism">comments powered by Disqus.</a></noscript>
+			      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+			 {% endifnotequal %}
+            {% else %}
+                <p>No posts.</p>
+            {% endif %}
+
+		</div></div>
+	</div>
+
+	  <div class="yui-b">
+	       <h4>About This Page</h4>
+	       <div class="aboutpage">
+		    <p>This entry is from my <a href="/{{ object.genre }}/">{{ object.genre }}</a> section and was written on {{ object.publish_date|date }}. {% if object.tags %}It's been tagged with
+                {% for tag in object.tags %}{% ifnotequal forloop.counter 1 %}{% if forloop.last %} and {% else %}, {% endif %} {% endifnotequal %}<a href="/tags/{{tag.name|slugify}}/">{{ tag.name|escape }}</a>{% endfor %}. {% endif %}
+               </p>
+	  </div>
+
+
+        {% ifequal object.genre "blog" %}
+            {% if not valid_user and not email %}
+	            <h4>Restricted Access</h4>
+                <p>Travel entries are limited to those on my contact list.</p>
+
+                  <div id="google-login" style="margin-left: 15px"> 
+                    <button onclick="window.location='{{ login_url }}'"
+                            style = "padding:3px;margin-top:8px;"> 
+                      <img src="https://www.google.com/favicon.ico" alt="Sign In with Google" style="margin-bottom:-3px;"/>&nbsp; Sign In with Google
+                    </button>
+                  </div> 
+
+.
+            {% else %} {%if not valid_user and email %}
+                <h4>Restricted Access</h4>
+                <p>Travel entries are limited to those on my contact list. Your email is currently not on my list.</p>
+            {% endif %}{% endif %}
+        {% endifequal %}
+
+        <h4>Via {{ status.service_name }}</h4>
+        <p>{{ status.content }} (<a href="{{ status.link }}">{{ status.publish_date|timesince }} ago</a>)</p>
+
+        {% if more_entries %}
+            <h4>{{ more_type }} <a href="/feeds/{{ genre }}/"><img src="/images/rss.png" alt="RSS"/></a></h4>
+            <ul>
+                    {% for entry in more_entries %}
+                            <li><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a>, {{ entry.publish_date|timesince }} ago</li>
+                    {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% if object.map_url %}
+            <h4>Travel Map from Google's Fusion Tables</h4>
+            <iframe width="290px" height="300px" scrolling="no"  src="{{ object.map_url }}"></iframe>
+            (<a href="{{ object.map_url }}">View Full Map</a>)
+        {% endif %}
+
+
+        {% if not object.core_topic %}
+	    <h4>Currently Reading</h4>
+            <div id="bookresults"></div>
+        {% endif %}
+
+
+	</div>
+</div>
+<br />
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+	var links = document.getElementsByTagName('a');
+	var query = '?';
+	for(var i = 0; i < links.length; i++) {
+	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+	}
+	}
+	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/kelvinism/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
+{% endblock %}
+
+{% block to_foot %}
+    <script type="text/javascript" src="/javascript/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript">
+              function checkBooks() {
+                $.get("/ajax/books/",
+                  function(data){
+                    $("#bookresults").html(data);
+                  });
+                  window.setTimeout(checkSites, 10000);
+              }
+
+              $(document).ready(function(){
+                  checkBooks();
+              });
+            </script>
+{% endblock %}

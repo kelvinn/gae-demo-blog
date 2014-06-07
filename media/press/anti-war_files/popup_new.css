@@ -1,0 +1,55 @@
+/* DO NOT CHANGE THESE VALUES*/
+.dialog {
+  display: block;
+  position: absolute;
+  text-align: left !important;
+}
+.dialog table.table_window  { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.dialog table.table_window td , .dialog table.table_window th { 
+  padding: 0; 
+}
+.dialog .title_window {
+  -moz-user-select:none;
+}
+
+/* close button */
+.dialog_close {	
+	width: 14px;	
+	height: 14px;	
+	background: transparent url(/media/assets/icons/close.gif) no-repeat 0 0;				
+	position:absolute;	
+	top:22px;	
+	left:97%;	
+	cursor:pointer;	
+	z-index:2000;
+}
+
+
+/* Overlay for modal window, spécify color and opacity (three times to work on all browsers */
+.overlay_popup {
+  background-color: #000000;
+  filter:alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+}
+.overlay_dialog {
+	background-color: #000000;
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+.overlay_dialog iframe {
+	border: 0;
+}
+.overlay___invisible__ {
+  background-color: #000000;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+}

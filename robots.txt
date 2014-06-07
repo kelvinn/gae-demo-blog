@@ -1,0 +1,11 @@
+User-agent: * 
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /media/
+Disallow: /templates/
+Disallow: /installation/
+Disallow: /webmail/
+Disallow: /server-stats/
+Disallow: /contact-me/
+Disallow: /feeds/life/
+Disallow: /feeds/tech/

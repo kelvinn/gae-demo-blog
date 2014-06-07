@@ -1,0 +1,8 @@
+* {border: none;}
+#topbar, #topsearchform, #cpleftcol, #cprightcol, #banner_network_5, #cpheader, #cpleftcol, #cprightcol, #issuesummary, #ncbar, .goner, #cpfooter, #ncbar td, #agent99, #loggedin_bar {display: none;}
+#maincontent {display: block;}
+#cpcentercol {width: 100%;}
+#left_cell, iframe, #banner_network_2, #right_cell, #topbar, #cpheader, #cpfooter, .goner, #banner_client_1 {display: none;}
+#flan_header, #flan_ads, #flan_nav, #weatherm, #flan_footer, #topbar {display: none;}
+#flan_content {width: 100%;}
+/*test*/

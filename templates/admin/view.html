@@ -1,0 +1,12 @@
+{% extends "adminbase.html" %}
+
+{% block content %}
+	<div id="doc2" class="yui-t6">
+        <div class="entrylist">
+            {% for object in object_list %}
+                {{ object.publish_date }} - <a href="/admin/edit/?key={{ object.key }}&item_type={{ item_type }}">{{ object.title }} - {{ object.genre }}</a> <br />
+            {% endfor %}
+        </div>
+   </div>
+{% endblock %}
+

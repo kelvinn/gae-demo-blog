@@ -1,0 +1,15 @@
+{% extends "adminbase.html" %}
+
+{% block content %}
+	<div id="doc2" class="yui-t6">
+        <form method="POST" class="form" action="/admin/submit/">
+        {{ form.as_ul }}
+        {% if key %}
+            <input type="hidden" name="id_key" value="{{ key }}">
+        {% endif %}
+        <input type="hidden" name="item_type" value="{{ item_type }}">
+        <input type="submit" id="submit" value="Submit Entry">
+        </form>
+    </div>
+{% endblock %}
+

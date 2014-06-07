@@ -1,0 +1,36 @@
+
+
+{%  load blog_extras %}
+{% for entry in entries %}
+    <entry>
+        <id>tag:blogger.com,1999:blog-1700991654357243752.post-{% generate_id %}</id>
+        <published>{{ entry.publish_date|date:"Y-m-d" }}T10:30:00.000123</published>
+        <updated>{{ entry.publish_date|date:"Y-m-d" }}T10:30:00.000123</updated>
+        <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/>
+        {% for tag in entry.tags %}
+            <category scheme='http://www.blogger.com/atom/ns#' term='{{ tag.name }}'/>
+        {% endfor %}
+
+        <title type='text'>{{ entry.title }}</title>
+        <content type='html'>{{ entry.content }}</content>
+
+        <link rel='alternate' type='text/html' href='http://www.example.com/{{ entry.publish_date|date:"Y/m" }}/{{ entry.slug }}.html' title='{{ entry.title }}'/>
+
+        <author><name>Joe Bloggs</name>
+            <uri>https://plus.google.com/12345689843655881853</uri>
+            <email>kelvin@example.com</email>
+            <gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//lh4.googleusercontent.com/-6Y_WU91234c/AAAAAAAAAAI/AAAAAAAAIo8/123456rpqA/s512-c/photo.jpg'/>
+        </author>
+    </entry>
+{% endfor %}
+
+
+## AND NOW FOR THE LINKS
+
+{% for entry in entries %}
+    /{{ entry.genre }}/{{ entry.slug }}/
+    /{{ entry.publish_date|date:"Y/m" }}/{{ entry.slug }}.html
+
+{%  endfor %}
+
+

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load blog_extras %}
+
+{% block title %}Kelvinism.com - Travel Map{% endblock %}
+{% block to_head %}
+    <link rel="alternate" type="application/rss+xml" title="Kelvin's Blog" href="/feeds/blog/" />
+
+{% endblock %}
+{% block content %}
+
+<div id="bd">
+    <div id="yui-main">
+        <div class="yui-g">
+            <span class="article-heading"><a href="http://www.kelvinism.com/travelmap/">Kelvin Nicholson's Travel Map</a></span>
+
+            <br /><br />
+            <iframe width="940px" height="600px" scrolling="no"  src="https://www.google.com/fusiontables/embedviz?viz=MAP&q=select+col2+from+768469+&h=false&lat=-31.60250654461964&lng=140.21023484179693&z=5&t=4&l=col2"></iframe>
+        </div>
+        <br /><br />
+    </div>
+</div>
+{% endblock %}

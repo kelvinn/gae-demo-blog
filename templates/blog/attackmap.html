@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% load blog_extras %}
+{% load tagging_tags %}
+
+{% block title %}Kelvinism.com - Labs - Attacks for {% now "jS F Y" %}{% endblock %}
+{% block to_head %}
+    <link rel="alternate" type="application/rss+xml" title="Kelvin's Blog" href="/feeds/life/" />
+
+    <link rel="stylesheet" href="http://media.kelvinism.com/openlayers/theme/default/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://media.kelvinism.com/css/attackmap.css" type="text/css" />
+   
+{% endblock %}
+{% block content %}
+
+<div id="bd">
+    <div id="yui-main">
+        <div class="yui-b"><div class="yui-g">
+            <span class="article-heading"><a href="http://www.kelvinism.com/attackmap/">Attacks on a home DSL connection</a></span>
+
+			<h4>Summary</h4><p> The below map displays one day worth of portscans to a regular DSL connection, sorted by attack origin (or supposed origin). If you wish to know a more technical explanation, plese scroll down to the Detailed section.  Total attacks since today: <b>{{num_lines }}</b></p>
+		
+			
+			<div style="text-align: right">
+			    <div id="map" class="smallmap"></div>
+			</div>
+
+			<h4>Details</h4><p> There is a fair amount of technology that went into creating the simple-looking map above, including <a href="http://www.ossec.net/">OSSEC</a>, <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, <a href="http://openlayers.org/">OpenLayers</a>, <a href="http://www.djangoproject.com/">Django</a>, <a href="http://www.python.org/">Python</a>, <a href="http://en.wikipedia.org/wiki/Syslog">SYSLOG</a>, <a href="http://postgis.refractions.net/">Postgis/Postgres</a>, <a href="http://httpd.apache.org/">Apache</a>, mod_tile, <a href="http://www.mapnik.org/">Mapnik</a> and <a href="http://code.google.com/p/modwsgi/">mod_wsgi</a>. There are other technologies as well (ESX for the virtualization, Zenoss for the monitoring, and so forth), but they are not really relevant. Since I'm not really in a typing mood for now, I'm going to make a quick drawing to illustrate the the flow and relationship between attack and request [attack = portscan, request = viewing map].</p>
+ 
+			<br />
+			<a href="https://picasaweb.google.com/lh/photo/xmWy2qiyBq45-Vv482QTGQ?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/_lE72KVrNO20/Tc-dpmlunpI/AAAAAAAACuo/uMq-Cc2Eef8/s800/flowchart.jpg" height="410" width="397" /></a>
+
+    <div class="clear"></div>
+
+            <br /><br />
+            <p><b>Update</b>: I've migrated this page off my DSL connection and onto my normal server -- however, while this page is hosted on my server, the attacks are still on my home connection.  Additionally, I've changed one line of code to use the OSM website instead of generating the tiles myself.  This allows more details for each suburb, and I can turn off the Tiles server to save a few cycles, and a few watts. (Although mod_tile has worked flawlessly for me for many months).</p>
+            <p><b>Attack Process</b>: I have configured my Cisco to forward syslog logs to my monitoring server, which are then consumed into OSSEC.  If a certain threshold is met, I will receive an email that somebody has tried scanning my public IP.  Regardless, each IP is recorded into a log file, firewall.log.  I wrote a script (thanks, Python!) utilizing PyParsing to extract the IP address out of the log, run it through GeoIP translation, and output it into a partial javascript file.</p>
+            <p><b>Map Request Process</b>: When a request comes in it first hits a reverse proxy that splits up requests to <a href="http://labs.kelvinism.com">labs.kelvinism.com</a> from <a href="http://tiles.kelvinism.com">tiles.kelvinism.com</a>.  A normal request, say to this page, will pass through to the normal web server that is running Django.  I've used Django to stitch together some javascript from OpenLayers (to generate the map), the partial javascript generated from the OSSEC log, and some other javascript to generate the lines and points.  When the map is loaded it makes repeated calls to tiles.kelvinism.com to fetch the <a href="http://tiles.kelvinism.com/osm_tiles2/12/3765/2457.png">small tiles</a> that are being stitched together.  Although only one line of code would allow me to use the OSM general server, I decided to implement a tile server myself.  The tile calls hit Apache, which has mod_tile built into it, then queries Postgis/OSM, and with the help of Mapnik, generates the individual tiles.  In the end you are left with a map of portscans.</p>
+            
+            <h4>Why?</h4>
+            <p>This is a really good question.  I guess this idea just sort of evolved after several little sessions/missions.  Maybe I was just tired of seeing all the alert emails come in, but never really thinking where the scans were coming from.  Maybe I just wanted to show people the importance of firewalls.</p>
+            <h4>Additional Resources</h4>
+        	<ul>
+        	<li><a href="http://www.kelvinism.com/tech-blog/integrating-ossec-cisco-ios/">Using Cisco IOS with OSSEC</a></li>
+        	<li><a href="http://www.ossec.net/wiki/index.php/PIX_and_IOS_Syslog_Config_examples">More IOS+OSSEC examples</a></li>
+        	<li><a href="http://sourceforge.net/projects/pyparsing/">PyParsing</a> and <a href="http://pyparsing.wikispaces.com/HowToUsePyparsing">a tutorial</a></li>
+        	</ul>
+
+        </div></div>
+    </div>			
+    <div class="yui-b">
+        <h4>About This Page</h4>
+        <p>This page displays the attacks on my home connection based on their location in the world. </p>
+        <br />
+        {% get_twitter_status as tweet %}
+        {% if tweet %}
+        <h4>Via Twitter</h4>
+        <p>{{ tweet.status }} (<a href="http://twitter.com/zephell">{{ tweet.time }}</a>)</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+
+{% block to_foot %}
+
+ <script src="http://media.kelvinism.com/openlayers/OpenLayers.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var map;
+        var zoom = 3;
+
+        OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
+        OpenLayers.Util.onImageLoadErrorColor = "transparent";
+
+
+        window.onload = function (){
+            var options = {
+                projection: new OpenLayers.Projection("EPSG:900913"),
+                displayProjection: new OpenLayers.Projection("EPSG:4326"),
+                units: "m",
+                numZoomLevels: 18,
+                maxResolution: 156543.0339,
+                maxExtent: new OpenLayers.Bounds(-20037508, -20037508,
+                                                 20037508, 20037508.34)
+            };
+
+
+            map = new OpenLayers.Map('map', options);
+
+            var mapnik = new OpenLayers.Layer.TMS(
+                "OpenStreetMap (Mapnik)",
+                "http://b.tile.openstreetmap.org/",
+                {
+                    type: 'png', getURL: osm_getTileURL,
+                    displayOutsideMaxExtent: true,
+                    wrapDateLine: true
+                }
+            );
+
+            var vector = new OpenLayers.Layer.Vector("Editable Vectors");
+            map.addControl(new OpenLayers.Control.LayerSwitcher());
+            map.addControl(new OpenLayers.Control.MousePosition());
+            var centre = lonLatToMercator(new OpenLayers.LonLat(-75.65, 41.4));
+
+	        function osm_getTileURL(bounds) {
+	            var res = this.map.getResolution();
+	            var x = Math.round((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
+	            var y = Math.round((this.maxExtent.top - bounds.top) / (res * this.tileSize.h));
+	            var z = this.map.getZoom();
+	            var limit = Math.pow(2, z);
+
+	            if (y < 0 || y >= limit) {
+	                return OpenLayers.Util.getImagesLocation() + "404.png";
+	            } else {
+	                x = ((x % limit) + limit) % limit;
+	                return this.url + z + "/" + x + "/" + y + "." + this.type;
+	            }
+	        }
+
+            /*
+             * Layer style
+             */
+            // we want opaque external graphics and non-opaque internal graphics
+            var layer_style = OpenLayers.Util.extend({}, OpenLayers.Feature.Vector.style['default']);
+            layer_style.fillOpacity = 0.2;
+            layer_style.graphicOpacity = 1;
+
+            var style_green = {
+                strokeColor: "#96513c",
+                strokeWidth: 1,
+                strokeDashstyle: "solid",
+                pointRadius: 10,
+                pointerEvents: "visiblePainted"
+            };
+
+            var vectorLayer = new OpenLayers.Layer.Vector("Lines", {style: layer_style});
+            var p1 = new OpenLayers.Geometry.Point(-13619717, 6042959);
+	        var lineList = [];
+	        var newLine;
+	        var pointList = new Array({{ num_lines}});
+	        var pointimport = [{{ coords }}];
+
+            for(var p=0; p<{{ num_lines }}; ++p) {
+            //p2 = new OpenLayers.Geometry.Point(Math.random()*360-180, Math.random()*180-90);
+                p2 = pointimport[p]
+                var points = [p1, p2];
+                newLine = new OpenLayers.Geometry.LineString(points);
+                lineList.push(newLine);
+                pointList[p] = new OpenLayers.Feature.Vector(
+                    p2, {
+                        type: 5 + parseInt(5 * Math.random())
+                    }
+                );
+
+            }
+
+            var lineFeature = new OpenLayers.Feature.Vector(
+                new OpenLayers.Geometry.MultiLineString(lineList),null,style_green);
+
+            // create the layer styleMap with a simple symbolizer template
+                var layer1 = new OpenLayers.Layer.Vector('Points', {
+                    styleMap: new OpenLayers.StyleMap({
+                    pointRadius: "${type}", // based on feature.attributes.type
+                    fillColor: "#333333",
+                    fillOpacity: 0.5,
+                    strokeColor: "#96513c",
+                    strokeWidth: 1
+                })
+            });
+            layer1.addFeatures(pointList);
+
+
+            map.addLayers([mapnik, vectorLayer, layer1]);
+            map.setCenter(centre, zoom);
+            vectorLayer.addFeatures([lineFeature]);
+        }
+
+        function lonLatToMercator(ll) {
+
+           var lon = ll.lon * 20037508.34 / 180;
+           var lat = Math.log(Math.tan((90 + ll.lat) * Math.PI / 360)) / (Math.PI / 180);
+           lat = lat * 20037508.34 / 180;
+           return new OpenLayers.LonLat(lon, lat);
+        }
+
+    </script>
+
+
+{% endblock %}
